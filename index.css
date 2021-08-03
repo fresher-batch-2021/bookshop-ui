@@ -1,0 +1,38 @@
+
+
+body{
+    background-color:dimgray;
+
+}
+header{
+
+ text-align: right;   
+     
+    
+}
+
+
+.call2{
+
+    background-color: bisque;
+    background-repeat:no-repeat;
+    background-image:url("book logo.jpg");
+    background-size: 190px;
+    
+}
+a{
+    text-align: right;
+    padding: 15px;      
+    
+      
+}
+  #searchbox{
+    
+    background-size: 50px;
+    margin: auto;
+    height:30px;
+    width:500px;
+}
+
+
+

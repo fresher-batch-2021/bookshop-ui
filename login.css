@@ -1,0 +1,43 @@
+
+    h1{
+        
+        margin: auto;
+        width: 150px;
+        height: 150px;
+        color: beige;
+    }
+    .cal1{
+        width: 240px;
+        height: 280px;
+        margin:auto;
+    
+        
+        border-radius:30px;
+        
+       
+        background-color: darkseagreen;
+        
+    }
+
+    .call3{
+         background-color:darkseagreen;
+    }
+    body{
+    background-image: url("Book.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    a{
+        padding: 20px;
+    }
+
+    .logo{
+        border-radius: 50%;
+        position: absolute;
+        width: auto;
+        height:18%;
+        right: 47%;
+        top:16%;
+    
+    }

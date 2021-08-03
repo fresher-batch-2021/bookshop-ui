@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="Register.css" />
+</head>
+
+<body>
+      <br> <br> <br>
+    <fieldset class="cal">
+         
+        <h3> Register</h3>
+        
+        <form action="login.html" onsubmit="register()">
+            
+            <label for="name">Enter a name(*)</label>
+            <input type="text" name="name" id="name" placeholder="Enter the name" autofocus>
+            <br/>
+            <br>
+
+            <label for="email">Enter an Email :</label>
+            <input type="email" name="email" id="email" > </br>
+            <br>
+
+            <label for="password">Enter new password : </label>
+            <input type="password" name="password" id="password" placeholder="enter the password"   minlength="8">
+            <br/>
+            <br>
+
+            <label for="password">Confirm Password : </label>
+            <input type="password" name="password" id="confirmpassword" placeholder="confirm Password" >
+            <br/>
+            <br>
+
+            <label for="dob">Date of Birth : </label>
+            <input type="date" name="date" id="date" placeholder="dd/mm/yy" >
+            <br> <br>
+            <label for = "Contact number">Contact Number :</label>
+            <input type = "Phone no" name ="Contact number" id = "contactnumber" placeholder="contact number"  pattern="[0-9]{10}">
+            <br/>
+            <br>
+            <br/>
+            <input type="submit" id="submit" value="Signup">
+
+        </form>
+
+    </fieldset>
+    <script>
+        function register() {
+            event.preventDefault();
+
+            const name = document.querySelector("#name").value;
+            if(name==null || name =="" || name.trim() ==""){
+                alert("Invalid name");
+                return false;
+            }
+            const email = document.querySelector("#email").value;
+            if(email==null){
+                alert("Invalid email")
+                return false;
+            }
+            const password = document.querySelector("#password").value;
+            if(password==""){
+                  alert("invalid password")
+                  return false;
+            }
+            
+            const confirmpassword = document.querySelector("#confirmpassword").value;
+            if(confirmpassword!=password){
+                alert("password dosen't match");
+                return false;
+            }
+        
+            const dob = document.querySelector("#date").value;
+            const ContactNumber = document.querySelector("#contactnumber").value;
+            if(ContactNumber==""){
+                alert("invalid contactno")
+                return false;
+            }
+            else{
+               alert("Registered successfull")
+               window.location.href="login.html";
+            }
+            console.log(name + "-" + email + "-" + password + "-" + dob);
+
+
+            let userObj = {
+
+                "firstName": name,
+                "email": email,
+                "password": password,
+                "confirmpassword": confirmpassword,
+                "dateOfBirth": dob
+            };
+            console.log(userObj);
+
+    
+        }
+
+    </script>
+
+</body>
+
+</html>

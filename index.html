@@ -1,12 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+            <script type="text/javascript">
+                function goToNewPage()
+                {
+                    var url = document.getElementById('list').value;
+                    if(url != 'none') {
+                        window.location = url;
+                    }
+                }
+            </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">   
     <title>Document</title>
+    
+    <link rel="stylesheet" href = "index.css"/>
+    <style>
+        #searchbox
+        {
+            margin: 0px auto;
+            display: block;
+            
+        }
+    </style>
+    
 </head>
-<body>
-    hello world
+<script src="assets/js/jquery.min.js"></script>
+    <script>
+           $(function(){
+        $("#header").load("_header.html");   
+           });
+
+    </script>  
+   <body>
+   
+        
+    
+
+    
+    
+
+
+        
+        <header id = "header">
+            </header>
+         
+        <fieldset class = call2>
+        
+        
+            
+    <h1>Book Shop</h1>        
+    
+
+    
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <header>
+        <div>
+        <nav class="navbar">            
+            <a class="brand" href="index.html">Home</a>
+            <a class="nav-item" href="login.html"> Login</a>
+            <a class="nav-item" href="register.html"> Register</a>
+            
+    
+            
+        </nav>
+        </div>
+</fieldset>   
+<div>
+    
+         
+        <form>
+        <label for = "books"> <b>Category :</b></label>
+        
+        <select name = "Books" id = "Books">
+        <option value="select option :">Books</option>
+        <option value ="books.html">history</option>
+        <option value = "thriller.html">thriller</option>
+        <option value ="architecture.html">Architechture</option>
+         </select>
+         <input type=button value="Go" onclick="goToNewPage()" />
+        <button>BestSeller</button>
+        <button>FeaturedAuthors </button>
+        <button>AwardWinners</button>
+        </form>
+      
+    
+</div>      
+       <br>
+     
+     
+    <input type="searchbox" name = "searchbox" id = "searchbox" placeholder = "Search by Title,Author or Publisher" autofocus></input>
+    
+   
+
 </body>
 </html>
