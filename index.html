@@ -19,14 +19,9 @@
     <title>Document</title>
     
     <link rel="stylesheet" href = "index.css"/>
-    <style>
-        #searchbox
-        {
-            margin: 0px auto;
-            display: block;
-            
-        }
-    </style>
+    
+        
+
     
 </head>
 <script src="assets/js/jquery.min.js"></script>
@@ -42,11 +37,7 @@
     
 
     
-    
-
-
-        
-        <header id = "header">
+  <header id = "header">
             </header>
          
         <fieldset class = call2>
@@ -70,30 +61,27 @@
             
         </nav>
         </div>
-</fieldset>   
-<div>
+</fieldset>  
+    <div class = "menubar">
+        <ul type="none">
+            <li>Books
+                    <ul type="none">
+                        <li> <a href="History.html">History</a> </li>
+                        <li> <a href="Science.html">Science</a> </li>
+                        <li> <a href="Novels.html">Novels</a></li>
+                        <li> <a href="Environment.html">Environment</a></li>
+                        <li> <a href="Architechture.html"> Architechture</a></li>
+                    </ul>
+            </li>
     
-         
-        <form>
-        <label for = "books"> <b>Category :</b></label>
-        
-        <select name = "Books" id = "Books">
-        <option value="select option :">Books</option>
-        <option value ="books.html">history</option>
-        <option value = "thriller.html">thriller</option>
-        <option value ="architecture.html">Architechture</option>
-         </select>
-         <input type=button value="Go" onclick="goToNewPage()" />
-        <button>BestSeller</button>
-        <button>FeaturedAuthors </button>
-        <button>AwardWinners</button>
-        </form>
-      
-    
-</div>      
-       <br>
-     
-     
+            <li>BestSellers</li>
+            <li>FeaturedAuthors </li>   
+            <li>AwardWinners</li>
+        </ul>
+    </div>
+    <br> 
+    <br>
+    <br>
     <input type="searchbox" name = "searchbox" id = "searchbox" placeholder = "Search by Title,Author or Publisher" autofocus></input>
     
    
