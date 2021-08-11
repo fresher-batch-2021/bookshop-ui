@@ -4,7 +4,7 @@
         }
     form {
     
-        border-radius:20px;
+        border-radius:110px;
         
         
         
@@ -13,20 +13,35 @@
        
         background-image: url("Book3.jpg");
        background-size: custom;
+    
      }
     
     .cal {
         
         margin:auto;
-        border-radius: 30%;
+        border-radius: 20%;
         width: 400px;
         height: 400px;
         background-color: aliceblue;
+    
         
      }
 
      .call4{
          background-color: coral;
     }
-
+    label{
+        width: 160px;
+        display: inline-block;
+        
+    }
+    #submit{
+        margin-left: 120px;
+        width:120px;
+        height: 50px;
+    }
+    #submit:hover{
+        background-color: lawngreen;
+        cursor: pointer;
+    }
 

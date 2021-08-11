@@ -1,43 +1,61 @@
 
-    h1{
+    h2{
         
         margin: auto;
         width: 150px;
         height: 150px;
-        color: beige;
+        color: maroon;
+        text-align: center;
     }
     .cal1{
-        width: 240px;
-        height: 280px;
+        padding: 50px;
+        width: 400px;
+        height: 350px;
         margin:auto;
+        border-radius:90px;
+       background-color: darkseagreen;
     
         
-        border-radius:30px;
-        
-       
-        background-color: darkseagreen;
-        
     }
+    input{
+        width: 300px;
+        height:30px;
+     }
+     button{
+         width:150px;
+         height:40px;
+         cursor: pointer;
+         border-radius: 30px;
+     }
+     button:hover{
+         text-decoration: underline;
+         background-color: darkolivegreen;
+        
+     }
 
-    .call3{
-         background-color:darkseagreen;
-    }
     body{
-    background-image: url("Book.jpg");
-    background-repeat: no-repeat;
+
+    background-color:salmon;
     background-size: cover;
     }
 
     a{
-        padding: 20px;
+        padding: 80px;
     }
-
+    a:hover{
+     color: brown;
+    }
     .logo{
         border-radius: 50%;
         position: absolute;
-        width: auto;
-        height:18%;
+        width:100px;
+        height:15%;
         right: 47%;
         top:16%;
     
+    }
+    label{
+        width: 240px;
+        display: inline-block;
+        
     }

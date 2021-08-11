@@ -4,7 +4,7 @@ body{
     background-color:dimgray;
 
 }
-header{
+#header{
 
  text-align: right;   
      
@@ -39,31 +39,7 @@ a{
     height: 35px;
 
 }
-/*
-.menubar ul{
-    display: inline-flex;
-    list-style: none;
-    color: #fff;
-}
 
-.menubar ul li{
-    width: 100px;
-    margin: 15px;
-    
-}
-
-.menubar ul li:hover.sub_menu{
-    display: block;
-    position: absolute;
-    background: rgb(0,100,0);
-    margin-top: 5px;
-    margin-left: -15px;
-}
-.menubar ul li .sub_menu ul {
-    display: block;
-    margin: 1px;
-}
-*/
 li{
     border:1px solid blue;
     width:140px;

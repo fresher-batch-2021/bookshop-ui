@@ -7,12 +7,14 @@
     <title>Document</title>
 
     <link rel = "stylesheet" href="Shipment Address.css"/>
+    <script src = "Shipment Address.js"></script>
 </head>
 <body>
+    <form action="Payment.html"  onsubmit="Shipment_validation()">
     <h1> Shipping Address</h1>
     <div class = "add">
-    <input type = "text" name = "Firstname" id = "Firstname" placeholder= "Enter First name" required autofocus> <br>
-    <input type = "text" name = "Lastname" id = "Lastname" placeholder= "Enter Last name"> <br>
+    <input type = "text" name = "Firstname" id = "Firstname" placeholder= "Enter First name"  autofocus> <br>
+    <input type = "text" name = "Lastname" id = "Lastname" placeholder= "Enter Last name" required ><br>
     <input type = "email" name = "email" id = "email" placeholder= "Enter Email Address" required > <br>
     <input type = "password" name = "password" id = "password" placeholder= "Enter Password" required > <br>
     <input type = "address" name = "address" id = "address" placeholder= "Address" required > <br>
@@ -21,19 +23,20 @@
     <label for = "Choose a state">Choose a State</label>
     <br>
     <select name = "state" id = "state">    
-        <option value = "TamilNadu">TamilNadu</option>
+        <option value = "TamilNadu">TamilNadu</option>  
         <option value = "Kerala">Kerala</option>
         <option value = "Karnataka">Karnataka</option>
     </select>
  
      <br>
     <input type = "pincode" name = "pincode" id = "pincode" placeholder="pincode" required > <br>
-    <input type = "Phonenumber" name = "phonenumber" id = "phonenumber" placeholder= "phonenumber" required >
+    <input type = "number" name = "phonenumber" id = "phonenumber" placeholder= "phonenumber" required >
      
     <br>
-    <a href = "Payment.html"> <button>continue</button> </a>
+    <button type = "submit">continue</button>
+
     </div>
-     
+     </form>
     
 </body>
 </html>
