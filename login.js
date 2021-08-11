@@ -4,18 +4,40 @@ event.preventDefault();
 var email = document.getElementById("email").value;
 var password = document.getElementById("password").value;
 
-if(email!="ramgv666@gmail.com" ){
-    alert("invalid email")
+if(email == "" ){
+    alert("invalid email");
+    return false;
  }
-    if(password!=12345678){
+    if(password ==""){
         alert("invalid password");
-    }
-    if(email=="ramgv666@gmail.com" && password=="12345678"){
-        alert("login successfull")
-    window.location.href = "index.html";
+        return false;
     }
     else{
-        alert("login failed");
+        let userObj = {
+            "email": email,
+            "password" : password
+        };
+    console.log(userObj);
+
+     let url ="https://product-mock-api.herokuapp.com/bookshopapp/api/v1/auth/login";
+     let formData = {          
+        email: email,          
+        password: password
     }
+    
+
+    
+    axios.post(url, formData).then(res=>{            
+        let data = res.data;
+        console.log(data);
+        alert("Successffully Login");
+        window.location.href = "index.html";
+    }).catch(err=>{
+        let errorMessage = err.response.data.errorMessage;
+        console.error(errorMessage);
+        alert("Error-" + errorMessage);
+    });
+
+}
 }
 
