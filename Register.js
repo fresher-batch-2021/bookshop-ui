@@ -25,8 +25,12 @@
     }
 
     const dob = document.querySelector("#date").value;
+    if(dob==null){
+        alert("enter date of birth");
+        return false;
+    }
     const ContactNumber = document.querySelector("#contactnumber").value;
-    if(ContactNumber==""){
+    if(ContactNumber.length!=10){
         alert("invalid contactno");
         return false;
     }
