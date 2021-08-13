@@ -39,7 +39,7 @@
     
   }
    label{
-     width: 240px;
+     width:95px;
      display:inline-block;
      text-align: right;
    }
@@ -52,4 +52,18 @@
     button{
       cursor: pointer;
     }
+
+    #validfrom{
+      width:150px;
+    }
+
+    #validupto{
+    
+      
+      width:150px;
+    
+      
+      
+    }
+
   

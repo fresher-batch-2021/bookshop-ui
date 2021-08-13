@@ -9,31 +9,29 @@
     <link rel="stylesheet" href= "login.css"/>
     <script src="login.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
 
 </head>
 
 
   <body>
-      <!--  <header id = "header"></header>x
-      <script src="jquery.min.js"></script>
-      <script>
-        $("#header").load("header.html")
-      </script>
-     </header>      -->
-     <form action = "index.html" onsubmit="login_validation()">
-        <img src = "logo1.jpg" alt = "user logo" class="logo">
-       <br>  <br>
-     <h2><b> Login </b></h2>
+      <header id = "header"></header>
+      
+      <img src = "booklogo2.jpg" alt = "user logo" class="logo">
+     <form onsubmit="login_validation()">
+        
+       
+     <h2><strong> Login <strong></h2>
       
     <div class="cal1">
         <label for ="Email"> Email : </label> <br>
-        <input type = "email" name="email" id ="email" placeholder = "Enter Email Address" required autofocus> <br>
-        <br>
+        <input type = "email" name="email" id ="email" placeholder = "Enter Email Address" required autofocus> <br><br>
+        
            
         <label for = "Password"> Password :</label>
         <input type = "Password" name= "password" id ="password" placeholder = "Enter Password" required> <br>
-         <br>
          
+         <br> <br>
          <hr>   
          <button type="submit"> Login</button>
          <button> Cancel</button>
@@ -46,7 +44,10 @@
     
   
      </form>
-
+     <script src="jquery.min.js"></script>
+     <script>
+       $("#header").load("header.html");
+     </script>
      
     </body>
     </html>

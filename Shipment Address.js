@@ -14,47 +14,42 @@ function Shipment_validation() {
          alert("firstname is required");
          return false;
      }
-     if(Lastname==""){
+     else if(Lastname==""){
          alert("lastanme is required");
          return false;
      }
-     if(email ==""){
+     else if(email ==""){
          alert("invalid email");
          return false;
      }
-     if(password.length<8){
-         alert("invalid password");
+     else if(password.length<8){
+         alert("password should be atleast 8 characters");
          return false;
      }
-     if(address==""){
+     else if(address==""){
          alert("enter address");
          return false;
      }
-     if(city==""){
+     else if(city==""){
          alert("enter city");
          return false;
      }
-     if(pincode.length!=6){
+     else if(pincode.length!=6){
         alert("invalid pincode");
         return false;
      }
-     if(phonenumber.length!=10){
+     else if(phonenumber.length!=10){
          alert("invalid phonenumber");
          return false;
      }
      else{
-         alert("payment succesfull");
+         alert("nextpage");
          window.location.href="Payment.html";
      }
     } 
 
 
-    function payment_validation() {
-        event.preventDefault();
-
-        
-    }
-     
+   
     
 
 

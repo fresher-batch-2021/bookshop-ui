@@ -6,7 +6,7 @@
     
         border-radius:110px;
         
-        
+     
         
     }
      body{
@@ -17,9 +17,9 @@
      }
     
     .cal {
-        
+    
         margin:auto;
-        border-radius: 20%;
+        border-radius: 10%;
         width: 400px;
         height: 400px;
         background-color: aliceblue;

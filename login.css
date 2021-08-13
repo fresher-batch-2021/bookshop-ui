@@ -6,11 +6,13 @@
         height: 150px;
         color: maroon;
         text-align: center;
+        font-size: 40px;
+        padding-right: 30px;
     }
     .cal1{
         padding: 50px;
         width: 400px;
-        height: 350px;
+        height: 300px;
         margin:auto;
         border-radius:90px;
        background-color: darkseagreen;
@@ -51,7 +53,7 @@
         width:100px;
         height:15%;
         right: 47%;
-        top:16%;
+        top:280px;
     
     }
     label{

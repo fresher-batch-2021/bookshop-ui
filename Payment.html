@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel = "stylesheet" href="Shipment Address.css"/>
+    <link rel="stylesheet" href="Shipment Address.css" />
+    <script src = "Shipment Address.js"></script>
+    <script src = "payment.js"></script>
 </head>
+
 <body>
-   
+     <form  onsubmit="payment_validation()">
     <h2>Payment Details</h2>
-    <div class = pay>
-    
-       <label for = "Type of card">Type of card : </label>
-       <select name = "cardpayments" id =  "cardpayments">
-           <option value = "Debitcard">Debitcard</option>
-           <option value = "creditcard">creditcard</option>
+    <div class=pay>
+
+        <label for="Type of card">Type of card : </label>
+        <select name="cardpayments" id="cardpayments">
+            <option value="">--select--</option>
+            <option value="Debitcard">Debitcard</option>
+            <option value="creditcard">Creditcard</option>
         </select>
-        
-        <br>
-        <label for = "nameoncard" >Enter your CardName:</label>
-        <input type = "nameoncard" id = "cardname" name = "cardname" placeholder = cardname required>
 
         <br>
-        <label for = "CardNumber" > CardNumber:</label>
-        <input type = "cardnumber" id = "cardnumber" name = "cardnumber" placeholder = cardnumber required>
+        <label for="nameoncard">Enter your CardName:</label>
+        <input type="name" id="cardname" name="cardname" placeholder=cardname autocomplete="off" required>
 
         <br>
-        <label for = "CVV" >CVV:</label>
-        <input type = "CVV" id = "CVV" name = "CVV" placeholder = CVV required>
-         
-        <br>
-        <label for = Cash on Delivery>Cash On Delivery : </label>
-        <input type = "checkbox" id = "checkbox" name = "checkbox">
+        <label for="CardNumber"> CardNumber:</label>
+        <input type="number" id="cardnumber" name="cardnumber" placeholder=cardnumber autocomplete="off" required  >
 
         <br>
-        <a href= "index.html"> <button>ContinueShopping</button></a>
+        <label for="CVV">CVV:</label>
+        <input type="number" id="CVV" name="CVV" placeholder=CVV autocomplete="off" required>
+
+        <br>
+
+        <label for="Validfrom"> Validfrom : </label>
+        <input type="month" id="validfrom" name="validfrom" required>
+        <label for="Validupto"> Validupto : </label>
+        <input type="month" id="validupto" name="vaildupto" required>
+
+        <br>
+        <label for=Cash on Delivery>Cash On Delivery : </label>
+        <input type="checkbox" id="checkbox" name="checkbox">
+
+        <br>
+        <a href="index.html"> <button>ContinueShopping</button></a>
         <button>PlaceOrder</button>
-      </div>
+    </div>
 
-      
+</form>
 </body>
+
 </html>
