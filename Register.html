@@ -2,67 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 
 
-    <link rel="stylesheet" href="Register.css" />
-    
-<script src="Register.js"></script>
+  <link rel="stylesheet" href="Register.css" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="Register.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 
 <body>
-    <header id="header"></header>
-    
-      <br> <br> <br>
-    <fieldset class="cal">
-         
-        <h3> Register</h3>
-        
-        <form  onsubmit="register()">
-            
-            <label for="name">Enter a name(*) : </label>
-            <input type="text" name="name" id="name" placeholder="Enter the name" autofocus>
-            <br/>
-            <br>
+  <header id="header"></header>
 
-            <label for="email">Enter an Email : </label>
-            <input type="email" name="email" id="email" > </br>
-            <br>
+  <br> <br> <br>
+  <fieldset class="cal">
 
-            <label for="password">Enter new password : </label>
-            <input type="password" name="password" id="password" placeholder="enter the password"   minlength="8">
-            <br/>
-            <br>
+    <h3> Register</h3>
 
-            <label for="password">Confirm Password : </label>
-            <input type="password" name="password" id="confirmpassword" placeholder="confirm Password" >
-            <br/>
-            <br>
+    <form onsubmit="register()">
 
-            <label for="dob">Date of Birth : </label>
-            <input type="date" name="date" id="date" placeholder="dd/mm/yy" >
-            <br> <br>
-            <label for = "Contact number">Contact Number : </label>
-            <input type = "number" name ="Contact number" id = "contactnumber" placeholder="contact number"  pattern="[0-9]{10}">
-            <br>
-            <br>
-            <br>
-            <input type="submit" id="submit" value="Signup">
+      <label for="name">Enter a name(*) : </label>
+      <input type="text" name="name" id="name" placeholder="Enter the name" pattern="[A-Za-z]{3,10}" autofocus>
 
-        </form>
-        <script src="jquery.min.js"></script>
-          <script>
-            $("#header").load("header.html");
-          </script>
-    </fieldset>
-    
-    
+      <br><br>
+
+      <label for="email">Enter an Email : </label>
+      <input type="email" name="email" id="email"> <br>
+      <br>
+
+      <label for="password">Enter new password : </label>
+      <input type="password" name="password" id="password" placeholder="enter the password" minlength="8">
+      <br>
+      <br>
+
+      <label for="password">Confirm Password : </label>
+      <input type="password" name="password" id="confirmpassword" placeholder="confirm Password">
+      <br>
+      <br>
+
+      <label for="dob">Date of Birth : </label>
+      <input type="date" name="date" id="date" placeholder="dd/mm/yy">
+      <br> <br>
+      <label for="Contact number">Contact Number : </label>
+      <input type="number" name="Contact number" id="contactnumber" placeholder="contact number" pattern="[0-9]{10}">
+      <br>
+      <br>
+      <br>
+      <input type="submit" id="submit" value="Signup">
+
+    </form>
+    <script src="jquery.min.js"></script>
+    <script>
+      $("#header").load("header.html");
+    </script>
+
+  </fieldset>
+
+
 </body>
 
 </html>

@@ -51,13 +51,12 @@
         border-radius: 50%;
         position: absolute;
         width:100px;
-        height:15%;
+        height: 15%;
         right: 47%;
-        top:280px;
+        top:360px;
     
     }
     label{
         width: 240px;
         display: inline-block;
-        
-    }
+     }
