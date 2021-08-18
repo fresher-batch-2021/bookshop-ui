@@ -1,4 +1,4 @@
- .his img{ 
+/*.his img{ 
     
     width: 150px;
     height: 150px;
@@ -14,7 +14,7 @@ div div{
 section{
     border: 1px solid black;
     width: 200px;
-    /*height: 1000px;*/
+    height: 1000px;
     text-align: left;
     float :left;
     margin-right: 8px;
@@ -63,6 +63,26 @@ button:hover{
      text-align: center;
      padding-top: 10px;
      box-sizing: border-box;
-}
+}        */     
+
+ 
+
+.row {
+        display: flex;
+        margin-left: 10%;
+        margin-right:60%;
+        
+
+      }
+      
+.column {
+     
+      padding:50px;
+    
+    }  
+
+ 
+
+
 
 
