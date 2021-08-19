@@ -3,8 +3,9 @@
     padding :0;
 }
 .logo{
+    width: 100px;
+    height:60px;
 
-    height:100px;
 }
 body{
     background-color:dimgray;
@@ -17,7 +18,8 @@ body{
     
 }
 .nav-item{
-    height:300px;
+    
+    font-size: 30px;
 }
 h1{
     height : 50px;
@@ -26,7 +28,7 @@ h1{
 
 
 .call2{
-
+    height : 150px;
     background-color: bisque;
     background-repeat:no-repeat;
     
@@ -88,4 +90,9 @@ ul li{
 ul{
     margin-top: 7px;
 }
-
+input {
+    width: 500px;
+    height :30px;
+    margin-top: 100px;
+    margin-left: 30%;
+}

@@ -1,4 +1,7 @@
-
+*{
+    margin : 0 ;
+    padding :0;
+}
 .logo1{
 
     height:50px;
@@ -13,9 +16,9 @@ h1{
     text-align: left;
 }
 
-
+    
 .call{
-
+    height:150px;
     background-color: bisque;
     background-repeat:no-repeat;
     
@@ -77,4 +80,11 @@ ul li{
 ul{
     margin-top: 7px;
 }
+
+.navbar{
+     
+    text-align: right;
+    font-size: 20px;
+} 
+
 
