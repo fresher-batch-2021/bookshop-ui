@@ -53,16 +53,21 @@ function Shipment_validation() {
      const dbpassword = '69c1d2737d371d9f6b7f6009287e6ccc';
      const basicAuth = 'Basic ' + btoa(dbusername + ':' + dbpassword);
      console.log(basicAuth);
-     let formData = {
-         firstname: Firstname,
-         lastname : Lastname,
-         email: email,
-         password : password,
-         address : address,
-         city : city,
-         pincode : pincode,
-         phonenumber: phonenumber
+     let userobj = {
+         "firstname": Firstname,
+         "lastname" : Lastname,
+         "email": email,
+         "password" : password,
+         "address" : address,
+         "city" : city,
+         "pincode" : pincode,
+        "phonenumber": phonenumber
      }
+    
+     
+    localStorage.setItem('address' , JSON.stringify(userobj));
+    alert("successfull");
+    window.location.href = "bill.html";
 
      const url = "https://784ea086-d974-431c-aa48-7801aa7b2561-bluemix.cloudantnosqldb.appdomain.cloud/bookshop_user/shippingaddress";
      axios.post(url, formData, { headers: { 'Authorization': basicAuth } }).then(res => {

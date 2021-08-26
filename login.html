@@ -1,53 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
 
-    <link rel="stylesheet" href= "login.css"/>
-    <script src="login.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="login.css" />
+  <script src="login.js"></script>
+  <script src="service.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
 </head>
 
 
-  <body>
-      <header id = "header"></header>
-      
-      <img src = "booklogo2.jpg" alt = "user logo" class="logo">
-     <form onsubmit="login_validation()">
-        
-       
-     <h2><strong> Login <strong></h2>
-      
-    <div class="cal1">
-        <label for ="Email"> Email : </label> <br>
-        <input type = "email" name="email" id ="email" placeholder = "Enter Email Address" required autofocus> <br><br>
-        
-           
-        <label for = "Password"> Password :</label>
-        <input type = "Password" name= "password" id ="password" placeholder = "Enter Password" required> <br>
-         
-         <br> <br>
-         <hr>   
-         <button type="submit"> Login</button>
-         <button> Cancel</button>
-       </hr>  
-          
-         <br><br><br><br><br>
-         <a href="Register.html"> Dont have an account? SIGN IN  </a> 
-          
-        </div>
+<body>
+  <header id="header"></header>
+
+  <!--- <img src="booklogo2.jpg" alt="user logo" class="logo">   -->
+  <form onsubmit="login_validation()">
+
+
+    <h2><strong> Login <strong></h2>
+
+
+    <label for="Email"> Email : </label>
+    <input type="email" name="email" id="email" placeholder="Enter Email Address" required autofocus> 
+
+
+    <label for="Password"> Password :</label>
+    <input type="Password" name="password" id="password" placeholder="Enter Password" required> 
+
+
+    <hr class="hr"> </hr>
     
+    <div class="cal">
+      <button type="submit"> Login</button>  
+      <div class = "cancel">
+      <button><a href = "index.html">Cancel</button></a>
+      </div>
+    </div>
+  </form>
+
+    <div class = "cal1">
+      <P>Dont have an account? <a  href="Register.html">SIGN IN </a></P>
+    
+    </div>
   
-     </form>
-     <script src="jquery.min.js"></script>
-     <script>
-       $("#header").load("header.html");
-     </script>
-     
-    </body>
-    </html>
+
+
+
+  <script src="jquery.min.js"></script>
+  <script>
+    $("#header").load("header.html");
+  </script>
+
+</body>
+
+</html>

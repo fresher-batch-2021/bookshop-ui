@@ -4,7 +4,8 @@
 }
 .logo{
     width: 100px;
-    height:60px;
+    height:70px;
+
 
 }
 body{
@@ -19,19 +20,23 @@ body{
 }
 .nav-item{
     
-    font-size: 30px;
+    font-size: 25px;
+    text-decoration: none;
+    float:right;
+    
 }
-h1{
-    height : 50px;
+h2{
+
     text-align: left;
+    text-decoration:none;   
 }
 
 
 .call2{
-    height : 150px;
+    
     background-color: bisque;
     background-repeat:no-repeat;
-    
+
 } 
 a{
     text-align: right;
@@ -44,7 +49,7 @@ a{
 .menubar{
     background:  black;
     border : 2px solid black;
-    height: 35px;
+    height: 45px;
 
 }
 
@@ -54,22 +59,21 @@ li{
     text-align:center;
     background-color: rgb(111, 184, 226);
     color:black;
-    height:20px;
-    padding-top:1px;
+    height:30px;
+    padding-top:5px;
     box-sizing:border-box;
     float:left;
-}
-li:hover {
+    margin-left: 10px;
+    }
+  li:hover {
     border:1px solid blue;
-    width:140px;
     text-align:center;
     background-color:rgb(90, 223, 145);
     color:white;
-    height:20px;
-    padding-top:1px;
-    box-sizing:border-box;
-    float:left;
-}
+    padding-top:5px;
+
+    
+    }       
 ul ul{
     margin-top:2px;
     margin-left:-40px;

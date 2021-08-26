@@ -3,7 +3,7 @@
  
 
   
-if (document.readyState == 'loading') {
+/*if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
     ready()
@@ -28,7 +28,7 @@ function ready() {
         button.addEventListener('click', addToCartClicked)
     }
 
-    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+   // document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
 function purchaseClicked() {
@@ -104,5 +104,88 @@ function updateCartTotal() {
     }
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '₹' + total
+}        */
+// loginCheck();
+
+let cartItem = JSON.parse(localStorage.setItem("historyservice.js"));
+console.log(cartItem)
+function displayCartItems() {
+  console.log("displayCartItems");
+let cartItem=JSON.parse(localStorage.getItem("cartElements"));
+console.log(cartItem)
+// console.log(cartItem);
+  let content = `<table>
+  <thead>
+<tr>
+    <th class="book">book</th>
+    <th class="authorname">authorname</th>
+    <th class="bookPrice">bookPrice</th>
+    <th class="bookQuantity">bookQuantity</th>
+    <th class="total">Total Amount</th>
+    <th class="delete">Delete</th>
+    
+</tr>
+    
+</thead><tbody>`;
+  let end = ` </tbody></table>`;
+//   console.log(displayCartItems);
+console.log(cartItem)
+var count=1;
+let sum=0;
+let total=0;
+  for (let item of cartItem) {
+    total=item.Quantity*item.price;
+    content = content + `
+                  <tr>
+                  <td>${count}</td>
+                     
+                     <td>${item.name}</td>
+                     <td>${item.price}</td>
+                     <td>${item.Quantity}</td>
+                     <td>${item.Quantity*item.price}</td>
+                     <td><a onclick="deleteCartData(${count-1})">delete</a></td>
+                     
+                   </tr>
+                   `;
+                  
+sum=sum+total;              
+count++;
+  }
+  localStorage.setItem("TOTAL_BILL_AMOUNT", sum);
+  
+  content += end;
+  
+  document.querySelector("#cartdata").innerHTML = content;
+
 }
+
+
+// Deleting elements in cart
+function deleteCartData(index){
+  var arr=JSON.parse(localStorage.getItem("cartElements"));//store the value in localstorage changed into json obj and store it in arr
+  if (arr[index].Quantity>1)
+   {
+      arr[index].Quantity--;
+  }
+  else{
+    arr.splice(index,1);
+  }
+  console.log(arr[index]);
+  localStorage.setItem("cartElements",JSON.stringify(arr));
+  displayCartItems();
+  }
+
+  function cartcheck()
+  {
+    let cartItem=JSON.parse(localStorage.getItem("cartElements"));
+    if (cartItem==null||cartItem=="")
+     {
+      alert("cart is empty");
+      window.location.href="index.html";
+    } else 
+    {
+      window.location.href="ordernow.html";
+    }
+  }
+  displayCartItems();
 

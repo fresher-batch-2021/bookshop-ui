@@ -2,59 +2,64 @@
 <html lang="en">
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        
-         
+
+<head>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">   
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    
-    <link rel="stylesheet" href = "index.css"/>
-    <script src = "search.js"></script>
-    
-</head>
-   <body>
-        
-        
 
-     <div class = call2>
+    <link rel="stylesheet" href="index.css" />
+    <script src="search.js"></script>
+
+</head>
+
+<body>
+
+
+
+    <div class=call2>
+
+        <h2> Book Shop</h2>
+        <a href="index.html"><img src="logo.png" class="logo"></a>
     
-    <h1> <a href="index.html"> Book Shop</h1> </a>     
-    <a href = "index.html"><img src = "logo.png" class = "logo"></a>
-      <header id = "header">
-        <div>
-        <div class="navbar">            
-           
+    </div>
+        <div class="navbar">
+
             <a class="nav-item" href="login.html"> Login</a>
             <a class="nav-item" href="register.html"> Register</a>
-            
-        </div>
-        </div></header>
 
-   
-</div>  
-    <div class = "menubar">
-        <ul type="none">
-            <li>Books
-                    <ul type="none">
-                        <li> <a href="History.html">History</a> </li>
-                        <li> <a href="Science.html">Science</a> </li>
-                        <li> <a href="Novels.html">Novels</a></li>
-                        <li> <a href="Environment.html">Environment</a></li>
-                        <li> <a href="Architechture.html"> Architechture</a></li>
-                    </ul>
-            </li>
+        </div>
+
+
+
     
+    <div class="menubar">
+        <ul type="none">
+            <li>Books <br>
+                <ul class="none">
+                    <li> <a href="History.html">History</a> </li>
+                    <li> <a href="Science.html">Science</a> </li>
+                    <li> <a href="Novels.html">Novels</a></li>
+                    <li> <a href="Environment.html">Environment</a></li>
+                    <li> <a href="Architechture.html"> Architechture</a></li>
+                </ul>
+            </li>
+
             <li>BestSellers</li>
-            <a href = "featuredauthors.html"> <li>FeaturedAuthors </li> </a> 
-            <li>AwardWinners</li>                               
+            <a href="featuredauthors.html">
+                <li>FeaturedAuthors </li>
+            </a>
+            <li>AwardWinners</li>
         </ul>
     </div>
 
-     <input type = "searchbox" placeholder = "search by title,book or publisher">
+    <input type="searchbox" placeholder="search by title,book or publisher" onclick="getAllItems()">
 
-    
+
 
 </body>
+
 </html>

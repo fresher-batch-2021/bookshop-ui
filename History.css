@@ -67,11 +67,16 @@ button:hover{
 
 .shop-item{
     margin-left: 10%;
-    display: inline-block;
-    
+    margin-top: 30px;
+    display:inline-block;
 }
- 
-
+.shop-item-details{
+    float: left;   
+}
+ .shop-item-price{
+     color:brown;
+     font-size: 30px;
+ }
 
 
 .button{
@@ -81,7 +86,7 @@ button:hover{
      height: 40px;
      width: 150px;
      text-align: center;
-     padding-top: 10px;
+     padding-top: 3px;
 }       
 
 

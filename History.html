@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-  <!---  <link rel = "stylesheet" href="History.css"/>  -->
-    <link rel = "stylesheet" href = "cart.css"/>
-    <link rel = "stylesheet" href = "history.css"/>
-    <script src = "cart.js" ></script>
+    <!---  <link rel = "stylesheet" href="History.css"/>  -->
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="history.css" />
+    <script src="historyservice.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="history.js"></script>
+    <script src="cart.js"></script>
+    <script src="jquery.min.js"></script>
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
-    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+
+
 
 </head>
-<body>
-    <header id = "header"></header>
-    
-    
-    <br><br><br>
 
+<body>
+    <header id="header"></header>
+
+    <p  id=demo></p>
+    <br><br><br>
+    <!-- 
 <div class="topcart">
     <section class="container content-section">
         <div class="shop-items">
@@ -29,10 +36,10 @@
                 
                 <a href = "bookdetails/maha.html" ><img class="shop-item-image" src="maha.jpg"  width =130px ></a>
                 <P class = "shop-item-title">Book:Mahabaratha</P>
-                <p>Authorname : C.Rajagopalachari</p>
+                <p>By : C.Rajagopalachari</p>
                 <div class="shop-item-details">
-                    <p class="shop-item-price">₹800</p>
-                    <a href = "cart.html"><button class="button" type="button">ADD TO CART</button></a>
+                    <p class="shop-item-price">₹800</p>  <p class="shop-item-price">${}</p>
+                    <a href ="cart.html"><button class="button" type = "button" onclick= "addToCartClicked()">ADD TO CART</button>
                 </div>
             </div>
 
@@ -40,17 +47,17 @@
                 
                  <a href = "morality.html"><img class="shop-item-image" src="morality.jpg"></a>
                  <p class="shop-item-title">Book:History and Morality</p>
-                 <p>Authorname:Donald Bloxham</p>
+                 <p>By:Donald Bloxham</p>
                 <div class="shop-item-details">
                     <p class="shop-item-price">₹500</p>
-                    <button class="button" type="button">ADD TO CART</button>
+                    <button class="button" type="button" >ADD TO CART</button>
                 </div>
             </div>
 
             <div class="shop-item">
                  <img class="shop-item-image" src="bhurma.jpg">
-                 <p class="shop-item-title">Book:The Hidden history of Burma</p>
-                 <p>Authorname:Thant Myint-U</p>
+                 <p class="shop-item-title">Book: History of Burma</p>
+                 <p>By:Thant Myint-U</p>
                 <div class="shop-item-details">
                     <p class="shop-item-price">₹250</p>
                     <button class="button" type="button">ADD TO CART</button>
@@ -59,8 +66,8 @@
 
             <div class="shop-item">
                 <img class="shop-item-image" src="Kargil.jpg">
-                <p class="shop-item-title">Kargil 1999</p>
-                <p>Authorname: Sanjay Badri-Maharaj</p>
+                <p class="shop-item-title">Book:Kargil 1999</p>
+                <p>By: Sanjay Badri-Maharaj</p>
                 <div class="shop-item-details">
                     <p class="shop-item-price">₹300</p>
                     <button class="button" type="button">ADD TO CART</button>
@@ -69,8 +76,8 @@
 
             <div class="shop-item">
                 <img class="shop-item-image" src="empire.jpg"  height="190px">
-                <p class="shop-item-title" >Book:Beginnings of Colonial Education  </p>
-                <p> Authorname: Jana Tschurenev</p>
+                <p class="shop-item-title" >Book:Beginnings of <br>Colonial Education  </p>
+                <p>By: Jana Tschurenev</p>
                 <div class="shop-item-details">
                     <p class="shop-item-price">₹459</p>
                     <button class="button" type="button">ADD TO CART</button>
@@ -80,7 +87,7 @@
             <div class="shop-item">
                 <img class="shop-item-image" src="images/bible.jpg"  >
                 <p class="shop-item-title" >Book:Bible Study Journal </p>
-                <p> Authorname:  Andrea Jensen</p>
+                <p>By:  Andrea Jensen</p>
                 <div class="shop-item-details">
                     <p class="shop-item-price">₹380</p>
                     <button class="button" type="button">ADD TO CART</button>
@@ -90,19 +97,27 @@
             <div class="shop-item">
                 <img class="shop-item-image" src="images/holy.jpg"  >
                 <p class="shop-item-title" >Book: The Holy Mass </p>
-                <p> Authorname:  Mike Aquilina, Thomas G Weinandy</p>
+                <p>By:  Mike Aquilina</p>
                 <div class="shop-item-details">
                     <p class="shop-item-price">₹680</p>
-                    <button class="button" type="button">ADD TO CART</button>
+                   <a href="cart.html">add to cart</a>
                 </div>
             </div>
         
-    
-    
-        
-    
+            <div class = "shop-item">
+                <img class = "shop-item-image" src = "images/ayurvedic.jpg"  alt = "ayurvedic">
+                <p class = "shop-item-title">Book :The Ayurvedic Reset Diet</p>
+                <p> By :  Vatsala Sperling</p>
+                <div  class = "shop-item-details">
+                    <p class = "shop-item-price">₹300</p>
+                <button class = "button" type = "button">ADD TO CART</button>
+                </div>
+            </div>       
+     -->
 
-   <!--- <div class ="row">
+
+
+    <!--- <div class ="row">
     
       <div class="column">
          
@@ -159,9 +174,9 @@
     <p class = "rs">₹220</p>
     <button class = "button">Add to cart</button>
     </div>
-</div>    -->
-   
-    <div class = "cartsection">
+</div>       -->
+
+    <!-- <div class = "cartsection">
     <section class = "container content-section">
         <h2 class = "section-header">CART</h2>
         <div class = "cart-row">
@@ -169,8 +184,8 @@
            <span class="cart-price">PRICE</span>
            <span class="cart-quantity">QUANTITY</span>
        </div>
-       <div class="cart-items">
-      <!-- <div class="cart-row">
+       <div class="cart-items">  -->
+    <!-- <div class="cart-row">
             <div class="cart-item cart-column">
                 <img class="cart-item-image" src="maha.jpg" width="100" height="100">
                 <span class="cart-item-title">Mahabharata</span>
@@ -192,24 +207,32 @@
                 <input class="cart-quantity-input" type="number" value="2">
                 <button class="btn btn-danger" type="button">REMOVE</button>
             </div>
-        </div>         -->
-     </div>      
+        </div>          -->
+    <!-- </div>        
 
     <div class="cart-total">
         <strong class="cart-total-title">Total</strong>
-        <span class="cart-total-price">₹</span>
+        <span class="cart-total-price">₹</span>   
+    </div> 
+    <div class="historyContainer" id="historyContainer">
+
+        
     </div>
-    <a href = "Shipment Address.html"button class=" btn-purchase" type="button">PURCHASE</button></a>
     
+    <a href = "Shipment Address.html"button class=" btn-purchase" type="button">PURCHASE</button></a>  
+    <a href="cart.html">add</a>  -->
+
     </section>
     </div>
-    
-    <script src="jquery.min.js"></script>
+
+
     <script>
         $("#header").load("header.html")
-      </script>
-    <script src="/productPage.js"></script>
-    
+    </script>
+    <!-- <script src="productPage.js"></script>       -->
+
+
 
 </body>
+
 </html>

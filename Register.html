@@ -20,50 +20,46 @@
 
 <body>
   <header id="header"></header>
+  
 
-  <br> <br> <br>
-  <fieldset class="cal">
-
-    <h3> Register</h3>
-
+   
+  <h3> Register</h3>
     <form onsubmit="register()">
-
-      <label for="name">Enter a name(*) : </label>
+        
+        <strong>
+      <label for="name">Enter a name : </label>
       <input type="text" name="name" id="name" placeholder="Enter the name" pattern="[A-Za-z]{3,10}" autofocus>
 
-      <br><br>
+      
 
       <label for="email">Enter an Email : </label>
-      <input type="email" name="email" id="email"> <br>
-      <br>
+      <input type="email" name="email" id="email" placeholder = "Enter Email">
+      
 
       <label for="password">Enter new password : </label>
       <input type="password" name="password" id="password" placeholder="enter the password" minlength="8">
-      <br>
-      <br>
+      
 
       <label for="password">Confirm Password : </label>
       <input type="password" name="password" id="confirmpassword" placeholder="confirm Password">
-      <br>
-      <br>
+    
 
       <label for="dob">Date of Birth : </label>
       <input type="date" name="date" id="date" placeholder="dd/mm/yy">
-      <br> <br>
+
       <label for="Contact number">Contact Number : </label>
       <input type="number" name="Contact number" id="contactnumber" placeholder="contact number" pattern="[0-9]{10}">
-      <br>
-      <br>
-      <br>
-      <input type="submit" id="submit" value="Signup">
 
+      <button type="submit"> SignUp </button>
+       
+      </strong>
     </form>
     <script src="jquery.min.js"></script>
     <script>
       $("#header").load("header.html");
     </script>
 
-  </fieldset>
+  
 
 
 </body>

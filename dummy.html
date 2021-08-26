@@ -5,10 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src = "jquery.min.js"></script>
+    <script src = "jquery.tmpl.js"></script>
 </head>
 <body>
+
+
     
-    <button onclick="da()">button</button>
-    <script src="dummy.js"></script>
-</body>
+   <button onclick="da()">button</button>
+    <script src="dummy.js"></script>      
+
+    <table border="1">
+        <thead>
+        <tr>
+            <th>name </th>
+            <th>price</th>
+        </tr>
+        </thead>
+        <tbody id = "table_list"></tbody>
+    </table>
+    <template id = "productTemplate">
+        <tr><td>${name}</td><td>${price}</td>
+            <td><button type = 'button' onclick = "deletRow('${name}')">Delete</button></td></tr>
+    </template>
+
+
+
+<script>
+    let contentobj = [{ name : "Apple", price:100},{name : "Orange" , price:50}];
+    $("#productTemplate").tmpl(contentobj).appendTo("#table_list");
+
+    function deleteRow(name){
+        console.log("Delete",name)
+    }
+</script>
+</body> 
 </html>
