@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <strong>
      <form  onsubmit="payment_validation()">
     <h2>Payment Details</h2>
     <div class=pay>
@@ -41,18 +42,21 @@
         <label for="Validfrom"> Validfrom : </label>
         <input type="month" id="validfrom" name="validfrom" required>
         <label for="Validupto"> Validupto : </label>
-        <input type="month" id="validupto" name="vaildupto" required>
+        <input type="month" id="validupto" name="vaildupto"  placeholder="dd/mm/yy required>
 
         <br>
         <label for=Cash on Delivery>Cash On Delivery : </label>
         <input type="checkbox" id="checkbox" name="checkbox">
 
         <br>
+        <div class = "place">
         <a href="index.html"> <button>ContinueShopping</button></a>
         <button>PlaceOrder</button>
+        </div>
     </div>
 
 </form>
+</strong>
 </body>
 
 </html>
