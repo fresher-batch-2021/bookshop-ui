@@ -30,4 +30,6 @@ function payment_validation() {
     }
 }
 
-
+localStorage.setItem('address' , JSON.stringify(userobj));
+alert("successfull");
+window.location.href = "bill.html";

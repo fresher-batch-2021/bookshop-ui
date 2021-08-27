@@ -65,9 +65,7 @@ function Shipment_validation() {
      }
     
      
-    localStorage.setItem('address' , JSON.stringify(userobj));
-    alert("successfull");
-    window.location.href = "bill.html";
+   
 
      const url = "https://784ea086-d974-431c-aa48-7801aa7b2561-bluemix.cloudantnosqldb.appdomain.cloud/bookshop_user/shippingaddress";
      axios.post(url, formData, { headers: { 'Authorization': basicAuth } }).then(res => {
