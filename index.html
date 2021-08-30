@@ -5,7 +5,7 @@
 
 <head>
 
-
+    <script src="https://kit.fontawesome.com/63cf6bcbd2.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -20,15 +20,19 @@
 
 
 
-    <nav class=call2>
+    <nav class="call2">
 
-        <h2> Book Shop</h2>
-        <a href="index.html"><img src="logo.png" class="logo"></a>
-        <input type="searchbox" placeholder="search by title,book or publisher" onclick="getAllItems()">
-
-        <a class="nav-item" href="login.html"> Login</a>
-        <a class="nav-item" href="register.html"> Register</a>
-
+        <div style="width: 30%; float: left;">
+        <a href="index.html"><img src="images/logo4.jpg" class="logo" ></a></div>
+        <input type="searchbox" placeholder="search by title,book or publisher" onclick="getAllItems()"><button class = "go">Go</button>
+        </div>
+        <div class = "nav-item">
+        <a href="login.html"> Login<i class="fas fa-sign-in-alt"></i></a>
+        </div>
+        <div class = "nav-item">
+        <a  href="register.html"> Register<i class="fas fa-user-plus"></i></a>
+        </div>
+        </div>
 
     </nav>
 
@@ -49,10 +53,8 @@
             </li>
  
            <!-- <li>BestSellers</li>    -->
-            <a href="featuredauthors.html">
-                <li>FeaturedAuthors </li>
-            </a>
-            <li>AwardWinners</li>
+            <a href="featuredauthors.html"><li>FeaturedAuthors </li> </a>
+            <a href ="awardwinners.html"><li>AwardWinners</li></a>
         </ul>
     </nav>
 
@@ -170,10 +172,11 @@
         <p>Rs. 800</p>
         <button> Add to Cart</button>
     </div>
-    </div> 
+    </div>
 
-   <h3 class="Tamil">Tamil Books</h3> 
-
+    
+    <h3 class="Tamil" style="text-align: center; margin-top: 880px">Tamil Books</h3> 
+    
     <div class = "card">
     <div class="row">
         <img class="img" src="images/prosperity.jpg">
@@ -214,10 +217,23 @@
     <div class="row">
         <img class="img" src="images/vasan.jpg">
         <p>VASANTHAKAALA KAVITHAIGAL</p>
-        <p class = "rs" 255></p>
+        <p>Rs. 255></p>
         <button> Add to Cart</button>
     </div>
     </div>
+
+    <section class="productContainer">
+        <h2 class="catagoriestitles">Products</h2>
+        <div class="card">
+            <img src="images/kargil.jpg" alt="Avatar">
+            <div class="product-detail-container">
+                <h4><b>Nivea</b></h4>
+                <p class="Offer-price">OfferPrice:Rs.100</p>
+                <p>MRP:<del>RS.120</del></p>
+                <button><a href="cart.html" class="add-cart-Button">Add to Cart</a></button>
+            </div>
+        </div>
+        </section>
 
    <!-- <div class = "shop-item">
         <img class = "shop-item-image" src = "images/ayurvedic.jpg"  alt = "ayurvedic">

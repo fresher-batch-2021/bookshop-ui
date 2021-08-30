@@ -89,6 +89,9 @@ button:hover{
      padding-top: 3px;
 }       
 
+.shop-item{
+    box-shadow: 0 4px 8px 0 #888888;
+}
 
  
 
