@@ -5,6 +5,27 @@ if (document.readyState == 'loading') {
     ready()
 }
 
+/*show();
+function show(){
+    let cardDetails=[{image:'suspects.jpg',bookName:'SUSPECTS SOMEONE KNOWS THE TRUTH',price:699}];
+    let content='';
+    for(let card of cardDetails){
+        content+=`
+        <div class = "card">
+        <div class="row">
+          <img class="img" src="images/${card.image}">
+        
+          <p>${card.bookName}</p>
+          <p>Rs. ${card.price}</p>
+          <button class = "but"> Add to Cart</button>
+      </div>
+      </div>
+  
+        `
+    }
+    document.querySelector().innerHTML=content;
+}         */
+
 function ready() {
     var removeCartItemButtons = document.getElementsByClassName('btn-danger')
     for (var i = 0; i < removeCartItemButtons.length; i++) {

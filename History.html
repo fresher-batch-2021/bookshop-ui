@@ -8,13 +8,12 @@
     <title>Document</title>
 
     <!---  <link rel = "stylesheet" href="History.css"/>  -->
-    <link rel="stylesheet" href="cart.css" />
-    <link rel="stylesheet" href="history.css" />
+    <link rel="stylesheet" href="styles/History.css"/>
     <script src="historyservice.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
         integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!--  <script src="history.js"></script>   -->
+    <!--  <script src="history.js"></script>   -->
     <script src="cart.js"></script>
     <script src="jquery.min.js"></script>
 
@@ -26,210 +25,92 @@
 <body>
     <header id="header"></header>
 
-    <p  id=demo></p>
-    <br><br><br>
-    
-<div class="topcart">
-    <section class="container content-section">
-        <div class="shop-items">
-            <div class="shop-item">
-                
-                <a href = "bookdetails/maha.html" ><img class="shop-item-image" src="images/maha.jpg"  width =130px ></a>
-                <P class = "shop-item-title">Book:Mahabaratha</P>
-                <p>By : C.Rajagopalachari</p>
-                <div class="shop-item-details">
-                    <p class="shop-item-price">₹800</p> 
-                <button class="button" type = "button" onclick= "addToCartClicked()">ADD TO CART</button>
-                </div>
-            </div>
-
-            <div class="shop-item">
-                
-                 <a href = "morality.html"><img class="shop-item-image" src="images/morality.jpg"></a>
-                 <p class="shop-item-title">Book:History and Morality</p>
-                 <p>By:Donald Bloxham</p>
-                <div class="shop-item-details">
-                    <p class="shop-item-price">₹500</p>
-                    <button class="button" type="button" >ADD TO CART</button>
-                </div>
-            </div>
-
-            <div class="shop-item">
-                 <img class="shop-item-image" src="images/bhurma.jpg">
-                 <p class="shop-item-title">Book: History of Burma</p>
-                 <p>By:Thant Myint-U</p>
-                <div class="shop-item-details">
-                    <p class="shop-item-price">₹250</p>
-                    <button class="button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-
-            <div class="shop-item">
-                <img class="shop-item-image" src="images/Kargil.jpg">
-                <p class="shop-item-title">Book:Kargil 1999</p>
-                <p>By: Sanjay Badri-Maharaj</p>
-                <div class="shop-item-details">
-                    <p class="shop-item-price">₹300</p>
-                    <button class="button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-
-            <div class="shop-item">
-                <img class="shop-item-image" src="images/empire.jpg"  height="190px">
-                <p class="shop-item-title" >Book:Beginnings of <br>Colonial Education  </p>
-                <p>By: Jana Tschurenev</p>
-                <div class="shop-item-details">
-                    <p class="shop-item-price">₹459</p>
-                    <button class="button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-        
-            <div class="shop-item">
-                <img class="shop-item-image" src="images/bible.jpg"  >
-                <p class="shop-item-title" >Book:Bible Study Journal </p>
-                <p>By:  Andrea Jensen</p>
-                <div class="shop-item-details">
-                    <p class="shop-item-price">₹380</p>
-                    <button class="button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-        
-            <div class="shop-item">
-                <img class="shop-item-image" src="images/holy.jpg"  >
-                <p class="shop-item-title" >Book: The Holy Mass </p>
-                <p>By:  Mike Aquilina</p>
-                <div class="shop-item-details">
-                    <p class="shop-item-price">₹680</p>
-                   <button class = "button" type = "button">ADD TO CART</button>
-                </div>
-            </div>
-        
-            <div class = "shop-item">
-                <img class = "shop-item-image" src = "images/ayurvedic.jpg"  alt = "ayurvedic">
-                <p class = "shop-item-title">Book :The Ayurvedic Reset Diet</p>
-                <p> By :  Vatsala Sperling</p>
-                <div  class = "shop-item-details">
-                    <p class = "shop-item-price">₹300</p>
-                <button class = "button" type = "button">ADD TO CART</button>
-                </div>
-            </div>       
-     -->
 
 
 
-    <!--- <div class ="row">
-    
-      <div class="column">
-         
-    <a href = "maha.html"><img class = "image" src = "Maha.jpg" alt="maha"  width ="130" height ="200"></a>
-    <p class= para></p>
-    <p class = "title">Book : Mahabharata</p>
-    <p>Authorname : C.RAJAGOPALACHARI</p>
-    <p class = "rs">₹ 800</p>
-    <a href = cart.html> <button  class = "button" type="button">Add to cart</button></a>
-       </div>
 
-     <div class = "column">
-    <a href = "morality.html"><img class = "image" src = "morality.jpg" alt = "morality"> </a>
-    <p class = "title">Book : History and Morality</p>
-    <p>Authorname:Donald Bloxham</p>
-    <p class = "rs">₹ 450</p>
-    <button  class = "btn" type = "button">Add to cart</button>
+    <div class="card">
+        <div class="row">
+            <a href="bookdetails/maha.html"><img class="img" src="images/maha.jpg"></a>
+            <P>Mahabaratha</P>
+            <p class="MRP">MRP: ₹699</p>
+            <button class="but"> Add to Cart</button>
 
-     </div>
-
-    <div class = "column">
-    <img class =  "image" src = "bhurma.jpg" alt = "bhurma">
-    <p> Book: The Hidden History of Burma</p>
-    <p>Authorname:Thant Myint-U</p>
-    <p class = "rs">₹ 600</p>
-    <button class = "btn">Add to cart</button>
-
-    </div>
-    
-
-    <div class = "column">
-    <img class = "image" src = "Kargil.jpg" alt = "Kargil">
-    <p> Book :Kargil 1999 </p>
-    <p>Authorname: Sanjay Badri-Maharaj</p>
-    <p class = "rs">₹ 500</p>
-    <button  class = "btn">Add to cart</button>
-
-     </div>
-    
-    
-    <div class = "column">
-     <img src = "empire.jpg" alt = "empire"   width = 120px height=180px>
-     <p>Book : Empire, Civil Society, and the Beginnings of Colonial Education in India </p>
-     <p> Authorname: Jana Tschurenev</p>
-     <p class = "rs">₹ 250</p>
-     <button class = "button">Add to cart</button>   
-    </div>   
-    </div>                                                                                              
-
-    <div class = "col">
-    <img src = "images/ayurvedic.jpg"  alt = "ayurvedic">
-    <p>Book :The Ayurvedic Reset Diet</p>
-    <p> Authorname :  Vatsala Sperling</p>
-    <p class = "rs">₹220</p>
-    <button class = "button">Add to cart</button>
-    </div>
-</div>       -->
-
- <div class = "cartsection">
-    <section class = "container content-section">
-        <h2 class = "section-header">CART</h2>
-        <div class = "cart-row">
-           <span class="cart-item">ITEM</span>
-           <span class="cart-price">PRICE</span>
-           <span class="cart-quantity">QUANTITY</span>
-       </div>
-       <div class="cart-items">  
-    <!-- <div class="cart-row">
-            <div class="cart-item cart-column">
-                <img class="cart-item-image" src="maha.jpg" width="100" height="100">
-                <span class="cart-item-title">Mahabharata</span>
-            </div>
-            <span class="cart-price cart-column">₹800</span>
-            <div class="cart-quantity cart-column">
-                <input class="cart-quantity-input" type="number" value="1">
-                <button class="btn btn-danger" type="button">REMOVE</button>
-            </div>
         </div>
-        
-        <div class="cart-row">
-            <div class="cart-item cart-column">
-                <img class="cart-item-image" src="morality.jpg" width="100" height="100">
-                <span class="cart-item-title">History and morality</span>
-            </div>
-            <span class="cart-price cart-column">₹500</span>
-            <div class="cart-quantity cart-column">
-                <input class="cart-quantity-input" type="number" value="2">
-                <button class="btn btn-danger" type="button">REMOVE</button>
-            </div>
-        </div>          -->
-     </div>        
-
-    <div class="cart-total">
-        <strong class="cart-total-title">Total</strong>
-        <span class="cart-total-price">₹</span>   
-    </div> 
-    <div class="historyContainer" id="historyContainer">
-
-        
     </div>
+
+    <div class="card">
+        <div class="row">
+
+            <a href="bookdetails/morality.html"><img class="img" src="images/morality.jpg"></a>
+            <p>History and Morality</p>
+            <p class="MRP">MRP: ₹500</p>
+            <button class="but"> Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="row">
+            <a href="bookdetails/bhurma.html"> <img class="img" src="images/bhurma.jpg"></a>
+            <p>History of Burma</p>
+            <p class="MRP">MRP: ₹500</p>
+            <button class="but"> Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="row">
+            <a href="bookdetails/kargil.html"><img class="img" src="images/Kargil.jpg"></a>
+            <p>Kargil 1999</p>
+            <p class="MRP">MRP: ₹300</p>
+            <button class="but"> Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="row">
+            <a href="bookdetails/empire.html"> <img class="img" src="images/empire.jpg"></a>
+            <p>Beginnings of Colonial Education </p>
+            <p class="MRP">MRP: ₹300</p>
+            <button class="but"> Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="row">
+            <a href="bookdetails/bible.html"> <img class="img" src="images/bible.jpg"></a>
+            <p>Bible Study Journal </p>
+            <p class="MRP">MRP: ₹300</p>
+            <button class="but"> Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="row">
+            <a href="bookdetails/holy.html"> <img class="img" src="images/holy.jpg"></a>
+            <p>The Holy Mass </p>
+            <p class="MRP">MRP: ₹680</p>
+            <button class="but"> Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="row">
+            <a href="bookdetails/ayurvedic.html"> <img class="img" src="images/ayurvedic.jpg" alt="ayurvedic"></a>
+            <p>The Ayurvedic Reset Diet</p>
+            <p class="MRP">MRP:₹300</p>
+            <button class="but"> Add to Cart</button>
+        </div>
+    </div>
+
+
+
+
     
-    <a href = "Shipment Address.html"button class=" btn-purchase" type="button">PURCHASE</button></a>  
-    <a href="cart.html">add</a>  
-
-    </section>
-    </div>
-
-
     <script>
         $("#header").load("header.html")
     </script>
-    <!-- <script src="productPage.js"></script>       -->
+
 
 
 

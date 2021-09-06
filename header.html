@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <script src="https://kit.fontawesome.com/63cf6bcbd2.js" crossorigin="anonymous"></script>
 
-    <link rel ="stylesheet"  href="header.css" >
+    <link rel="stylesheet" href="styles/header.css">
 </head>
+
 <body>
-
-   
-<fieldset class = call>
-<main>
-<h1>Book Shop</h1>        
-<a href = "index.html"><img src = "images/logo4.jpg" class = "logo1"></a>
-
- <header id = "header1"></header>
-   
-   <div class="navbar">            
+    <body>
+        <nav class = "nav1">
+         <a href="index.html"><img src="images/logo10.png" class="logo"></a>
+         
+             <div>
+                 <input type = "searchbox" placeholder="Search books by title,author or publisher" >
+                 <button class="fas fa-search"></button>
+     
+         
+             <p class="far fa-user"> My account</p> 
+              <p class="fas fa-shopping-cart">My cart</p>
+              </div>
+         
+         </nav>
+         <hr>
+         <nav class="navbar">
         
-       <a class="logout " href="index.html"> Logout</a>
-        <a href = "cart">cart</a>
-       
-   </div>
-   
-
-</fieldset>  
-<div class = "menubar1">
-   <ul type="none">
-       <li>Books
-               <ul type="none">
-                   <li> <a href="History.html">History</a> </li>
-                   <li> <a href="Science.html">Science</a> </li>
-                   <li> <a href="Novels.html">Novels</a></li>
-                   <li> <a href="Environment.html">Environment</a></li>
-                   <li> <a href="Architechture.html"> Architechture</a></li>
-               </ul>
-       </li>
-       <li>FeaturedAuthors </li>   
-       <li>AwardWinners</li>                               
-   </ul>
-</div>
-
+            <div class="dropdown">
+              <button class="dropbtn">Book By Category
+                <i class="fas fa-angle-down"></i> 
+              </button>
+              <div class="dropdown-content">
+                <a href="History.html">History</a>
+                <a href="Novels.html">novels</a>
+                <a href="Science.html">Science</a>
+              </div>
+            </div> 
+            <a href = "featuredauthors.html">Featured Authors</a>
+            <a href = "awardwinners.html">Award Winners</a>
+       </nav>    
+              
+        
 
 
 
 
 </body>
+
 </html>
-      

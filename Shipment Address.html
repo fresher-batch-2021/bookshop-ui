@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="Shipment Address.css" />
+    <link rel="stylesheet" href="styles/Shipment Address.css" />
     <script src="Shipment Address.js"></script>
 </head>
 
 <body>
+    <header id = "header"></header>
     <form onsubmit="Shipment_validation()">
         <h2> Shipping Address</h2>
         <div class="add">
@@ -35,11 +36,14 @@
             <input type="number" name="phonenumber" id="phonenumber" placeholder="phonenumber" required>
 
             <br>
-            <button  type="submit"><a href = "Payment.html">continue</button></a>
+         <button  type="submit">continue</button>
 
         </div>
     </form>
-
+    <script src="jquery.min.js"></script>
+    <script>
+        $("#header").load("header.html")
+    </script>
 
 
 </body>

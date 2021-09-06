@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="Shipment Address.css" />
+    <link rel="stylesheet" href="styles/Shipment Address.css" />
     <script src = "Shipment Address.js"></script>
     <script src = "payment.js"></script>
 </head>
 
 <body>
+    <header id = "header"></header>
     <strong>
      <form  onsubmit="payment_validation()">
     <h2>Payment Details</h2>
@@ -25,39 +26,39 @@
             <option value="creditcard">Creditcard</option>
         </select>
 
-        <br>
+        
         <label for="nameoncard">Enter your CardName:</label>
         <input type="name" id="cardname" name="cardname" placeholder=cardname autocomplete="off" required>
 
-        <br>
+    
         <label for="CardNumber"> CardNumber:</label>
-        <input type="number" id="cardnumber" name="cardnumber" placeholder=cardnumber autocomplete="off" required  >
+        <input type="number" id="cardnumber" name="cardnumber" placeholder=cardnumber autocomplete="off" required >
 
-        <br>
+        
         <label for="CVV">CVV:</label>
         <input type="number" id="CVV" name="CVV" placeholder=CVV autocomplete="off" required>
 
-        <br>
+    
 
         <label for="Validfrom"> Validfrom : </label>
         <input type="year" id="validfrom" name="validfrom" placeholder="yy/mm" required>
         <label for="Validupto"> Validupto : </label>
         <input type="year" id="validupto" name="vaildupto" placeholder="yy/mm" required>
 
-        <br>
-    
-    
-    
-
-        <br>
+        
         <div class = "place">
-         <button type = "submit"> <a href="index.html">ContinueShopping</button></a>
+         <button type = "submit">ContinueShopping</button></a>
         <button><a href ="bill.html">PlaceOrder</button></a>
         </div>
     </div>
 
 </form>
 </strong>
+       <script src="jquery.min.js"></script>
+        <script>
+        $("#header").load("header.html")
+</script>
+
 </body>
 
 </html>

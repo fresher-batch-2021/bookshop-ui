@@ -8,14 +8,14 @@
   <title>Document</title>
 
 
-  <link rel="stylesheet" href="Register.css" />
-
+  <link rel="stylesheet" href="styles/Register.css" />
+   
   <script src="Register.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
     integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <script src="jquery.min.js"></script>
 </head>
 
 <body>
@@ -50,14 +50,15 @@
       <label for="Contact number">Contact Number : </label>
       <input type="number" name="Contact number" id="contactnumber" placeholder="contact number" pattern="[0-9]{10}">
 
-      <button type="submit"> SignUp </button>
+      <a href = "login.html"><button type="submit"> SignUp </button></a>
        
       </strong>
     </form>
-    <script src="jquery.min.js"></script>
+
     <script>
-      $("#header").load("header.html");
-    </script>
+      $("#header").load("header.html")
+  </script>
+
 
   
 

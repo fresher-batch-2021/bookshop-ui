@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     
+    <link rel="stylesheet" href="styles/History.css"/>
 
-    <link rel="stylesheet" href="History.css" />
+    
 </head>
 
 <body>
-
-    <img src="maha.jpg" alt="maha">
-    <div class="mahab"></div>
+     <header id = "header"></header>
+    <img class = "img1" src="images/maha.jpg" alt="maha">
+    <div class="mahab">
     <h1>Mahabharata</h1>
     <ul>
         <li> Author name : C.RAJAGOPALACHARI </li>
@@ -24,14 +26,13 @@
     </ul>
     <p class="rs">₹ 450</p>
 
-    <button><a href="Shipment Address.html">Buy Now</button> </a>
-    <button>cancel</button></a>
-
-
-    </div>
+    <a href = "Shipment Address.html"> <button class = "but2">Buy Now</button> </a>
+    <button class = "but2">cancel</button>
+     </div>
 
     <div class="descrip">
-        <p>Description : Centuries ago, it was proclaimed of the Mahabharata: "What is not in it, is nowhere." But even
+        <strong><p>About the Book :</strong>
+             Centuries ago, it was proclaimed of the Mahabharata: "What is not in it, is nowhere." But even
             now, we can use the same words about it. He who knows it not, knows not the heights and depths of the soul;
             he misses the trials
             and tragedy and the beauty and grandeur of life.The Mahabharata is not a mere epic; it is a romance, telling
@@ -43,7 +44,11 @@
             of scriptures and the grandest of sagas in which the climax is reached in the wondrous apocalypse in the
             Eleventh Canto.</p>
     </div>
-
+    <script src="jquery.min.js"></script>
+    <script>
+        $("#header").load("header.html")
+    </script>
+    
 </body>
 
 </html>

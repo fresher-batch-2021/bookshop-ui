@@ -11,26 +11,66 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <script src="search.js"></script>
 
 </head>
 
 <body>
+   <nav class = "nav1">
+    <a href="index.html"><img src="images/logo10.png" class="logo"></a>
+    
+        <div>
+            <input type = "searchbox" placeholder="Search books by title,author or publisher" >
+            <button class="fas fa-search"></button>
 
-
-
-    <nav class="call2">
+    
+        <a href = Register.html><p class="far fa-user"> My account</p></a>
+         <p class="fas fa-shopping-cart">My cart</p>
+         </div>
+    
+    </nav>
+    <hr>
+   <!--- <nav class = "nav2">
+     <ul type = "none">
+             <button  class = "submain">Book By Category<i class="fas fa-angle-down"></i> 
+                <ul>
+                   <div class = "item-cat">
+                      <li> <a href="History.html">History</a> </li>
+                      <li> <a href="Science.html">Science</a> </li>
+                      <li> <a href="Novels.html">Novels</a></li>  
+                   </div> 
+                </ul>             
+            </li>       -->
+            <nav class="navbar">
+        
+                <div class="dropdown">
+                  <button class="dropbtn">Book By Category
+                    <i class="fas fa-angle-down"></i> 
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="History.html">History</a>
+                    <a href="Novels.html">novels</a>
+                    <a href="Science.html">Science</a>
+                  </div>
+                </div> 
+                <a href = "featuredauthors.html">Featured Authors</a>
+                <a href = "awardwinners.html">Award Winners</a>
+           </nav>    
+     
+  <!--  <nav class="call2">
 
         <div style="width: 30%; float: left;">
-        <a href="index.html"><img src="images/logo4.jpg" class="logo" ></a></div>
-        <input type="searchbox" placeholder="search by title,book or publisher" onclick="getAllItems()"><button class = "go">Go</button>
+            <a href="index.html"><img src="images/logo4.jpg" class="logo"></a>
         </div>
-        <div class = "nav-item">
-        <a href="login.html"> Login<i class="fas fa-sign-in-alt"></i></a>
+        <input type="searchbox" placeholder="search by title,book or publisher" onclick="getAllItems()"><button
+            class="go">Go</button>
         </div>
-        <div class = "nav-item">
-        <a  href="register.html"> Register<i class="fas fa-user-plus"></i></a>
+        <div class="nav-item">
+            <a href="login.html"> Login<i class="fas fa-sign-in-alt"></i></a>
+        </div>
+        <div class="nav-items">
+            <a href="register.html"> Register<i class="fas fa-user-plus"></i></a>
         </div>
         </div>
 
@@ -47,20 +87,24 @@
                     <li> <a href="History.html">History</a> </li>
                     <li> <a href="Science.html">Science</a> </li>
                     <li> <a href="Novels.html">Novels</a></li>
-            <!---   <li> <a href="Environment.html">Environment</a></li>
-                    <li> <a href="Architechture.html"> Architechture</a></li>   -->
+                    <!---   <li> <a href="Environment.html">Environment</a></li>
+                    <li> <a href="Architechture.html"> Architechture</a></li>   
                 </ul>
             </li>
- 
-           <!-- <li>BestSellers</li>    -->
-            <a href="featuredauthors.html"><li>FeaturedAuthors </li> </a>
-            <a href ="awardwinners.html"><li>AwardWinners</li></a>
+
+            <!-- <li>BestSellers</li>    
+            <a href="featuredauthors.html">
+                <li>FeaturedAuthors </li>
+            </a>
+            <a href="awardwinners.html">
+                <li>AwardWinners</li>
+            </a>
         </ul>
-    </nav>
+    </nav>          -->
 
-    <div class="slideshow-container">
+     <div class="slideshow-container">
 
-        <!-- Full-width images with number and caption text -->
+        
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
             <img src="images/slider1.png" style="width:100%">
@@ -79,11 +123,11 @@
             <div class="text">Caption Three</div>
         </div>
 
-        <!-- Next and previous buttons -->
+        
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <br>
+    
 
     <!-- The dots/circles -->
     <div style="text-align:center">
@@ -92,204 +136,184 @@
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
 
+    
     <h3>New Releases</h3>
-    <div class = "card">
-      <div class="row">
-        <img class="img" src="images/suspects.jpg">
-      
-        <p>SUSPECTS SOMEONE <br> KNOWS THE TRUTH</p>
-        <p>Rs. 699</p>
-        <button> Add to Cart</button>
-    </div>
+    <div class="card">
+        <div class="row">
+            <img class="img" src="images/suspects.jpg">
+
+            <p>SUSPECTS SOMEONE KNOWS THE TRUTH</p>
+            <p class="MRP">MRP: ₹699</p>
+            <button class="but"> Add to Cart</button>
+        </div>
     </div>
 
-    <div class = "card">
-     <div class="row">
-        <img class="img" src="images/sky.jpg">
-      
-        <p>THE ONLY PLANE IN THE SKY <br> THE ORAL HISTORY OF 9/11</p>
-        <p>Rs. 699</p>
-        <button> Add to Cart</button>
+    <div class="card">
+        <div class="row">
+            <img class="img" src="images/sky.jpg">
+            <p>THE ONLY PLANE IN THE SKY THE ORAL HISTORY OF 9/11</p>
+            <p class="MRP">MRP: ₹699</p>
+            <button class="but"> Add to Cart</button>
+
+        </div>
     </div>
+
+    <div class="card">
+        <div class="row">
+            <img class="img" src="images/scorpian.jpg">
+
+            <p>SCORPION CATCH HIM IF YOU CAN</p>
+            <p class="MRP">MRP: ₹750</p>
+            <button class="but"> Add to Cart</button>
+        </div>
     </div>
- 
-    <div class = "card">
-    <div class="row">
-        <img class="img" src="images/scorpian.jpg">
-      
-        <p>SCORPION CATCH HIM <br>IF YOU CAN</p>
-        <p>Rs.750</p>
-        <button> Add to Cart</button>
+
+    <div class="card">
+        <div class="row">
+            <img class="img" src="images/sulthan.jpg">
+
+            <p>SULTAN THE LEGEND OF HYDER ALI</p>
+            <p class="MRP">MRP: ₹800</p>
+            <button class="but"> Add to Cart</button>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="row">
+            <img class="img" src="images/discordant1.jpg">
+
+            <p>DISCORDANT NOTES VOL 1</p>
+            <p class="MRP">MRP: ₹999</p>
+            <button class="but"> Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="row">
+            <img class="img" src="images/discordant2.jpg">
+
+            <p>DISCORDANT NOTES VOL 2</p>
+            <p class="MRP">MRP: ₹999</p>
+            <button class="but"> Add to Cart</button>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="row">
+            <img class="img" src="images/topgun.jpg">
+
+            <p>DAN PEDERSEN'S TOP GUN</p>
+            <p class="MRP">MRP: ₹499</p>
+            <button class="but"> Add to Cart</button>
+        </div>
+    </div>
+
+
+
+
+    <div class="card">
+        <div class="row">
+            <img class="img" src="images/business.jpg">
+            <p> FAMILY BUSINESS</p>
+            <p class="MRP">MRP: ₹800</p>
+            <button class="but"> Add to Cart</button>
+        </div>
+    </div>
+
+
+    <h3 class="Tamil" style="text-align: center; margin-top: 880px">Tamil Books</h3>
+
+    <div class="card">
+        <div class="row">
+            <img class="img" src="images/prosperity.jpg">
+            <p>PROSPERITY THINKING </p>
+            <p class="MRP">MRP: ₹399</p>
+            <button class="but"> Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="row">
+            <img class="img" src="images/success.jpg">
+            <p>THE LAWS OF SUCCESS</p>
+            <p class="MRP">MRP: ₹500</p>
+            <button class="but"> Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="row">
+            <img class="img" src="images/velir.jpg">
+            <p>VELIR VARALAARU</p>
+            <p class="MRP">MRP: ₹600</p>
+            <button class="but"> Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="row">
+            <img class="img" src="images/archer.jpg">
+            <p>VILLAALAN THE ARCHER</p>
+            <p class="MRP">MRP: ₹355</p>
+            <button class="but"> Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="row">
+            <img class="img" src="images/vasan.jpg">
+            <p> KAVITHAIGAL</p>
+            <p class="MRP">MRP: ₹255</p>
+            <button class="but"> Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="row">
+            <img class="img" src="images/shabatam.jpg">
+            <p>SHIVAKAMIYIN SHABATAM</p>
+            <p class="MRP"> MRP: ₹399</p>
+            <button class="but"> Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="row">
+            <img class="img" src="images/sindhanigal.jpg">
+            <p>UPANISHATA SINDHANIGAL</p>
+            <p class="MRP">MRP: ₹259</p>
+            <button class="but"> Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="row">
+            <img class="img" src="images/way.jpg">
+            <p>THE INDIA WAY</p>
+            <p class="MRP">MRP: ₹315</p>
+            <button class="but"> Add to Cart</button>
+        </div>
+    </div>
+
+
+
+
+<footer>
+    <div class = "foot">
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-facebook"></i>
+    </div>  
+    <div class = "text">
+            <p> about </p>
+            <p>Terms of Use</p>
+            <p>contact</p>
      </div>
-    </div>
-
-    <div class = "card">
-    <div class="row">
-        <img class="img" src="images/discordant1.jpg">
-     
-        <p>DISCORDANT NOTES <br>VOL 1</p>
-        <p>Rs. 999</p>
-        <button> Add to Cart</button>
-     </div>
-    </div>
-
-    <div class = "card">
-    <div class="row">
-        <img class="img" src="images/discordant2.jpg">
-     
-        <p>DISCORDANT NOTES <br> VOL 2</p>
-        <p>Rs. 999</p>
-        <button> Add to Cart</button>
-      </div>
-     </div>
-    
-
-    <div class = "card">
-    <div class="row">
-        <img class="img" src="images/topgun.jpg">
-    
-        <p>DAN PEDERSEN; <BR> TOP GUN</p>
-        <p>Rs. 499</p>
-        <button> Add to Cart</button>
-        </div>
-    </div>
-
-    <div class = "card">
-    <div class="row">
-        <img class="img" src="images/sulthan.jpg">
-     
-        <p>SULTAN THE LEGEND OF <br> HYDER ALI</p>
-        <p>Rs. 800</p>
-        <button> Add to Cart</button>
-        </div>
-
-    </div>
-     
-    <div class = "card">
-    <div class="row">
-        <img class="img" src="images/business.jpg">
-        <p>HOW TO THRIVE IN A <br> FAMILY BUSINESS</p>
-        <p>Rs. 800</p>
-        <button> Add to Cart</button>
-    </div>
-    </div>
-
-    
-    <h3 class="Tamil" style="text-align: center; margin-top: 880px">Tamil Books</h3> 
-    
-    <div class = "card">
-    <div class="row">
-        <img class="img" src="images/prosperity.jpg">
-        <p>PROSPERITY THINKING TAMIL</p>
-        <p>Rs. 399</p>
-        <button> Add to Cart</button>
-    </div>
-    </div>
-     
-    <div class = "card">
-    <div class="row">
-        <img class="img" src="images/success.jpg">
-        <p>THE LAWS OF SUCCESS</p>
-        <p>Rs. 500</p>
-        <button> Add to Cart</button>
-    </div>
-    </div>
-
-    <div class = "card">
-    <div class="row">
-        <img class="img" src="images/velir.jpg">
-        <p>VELIR VARALAARU</p>
-        <p>Rs. 600</p>
-        <button> Add to Cart</button>
-    </div>
-    </div>
-
-    <div class = "card">
-    <div class="row">
-        <img class="img" src="images/archer.jpg">
-        <p>VILLAALAN TAMIL THE ARCHER</p>
-        <p>Rs. 355</p>
-        <button> Add to Cart</button>
-    </div>
-    </div>
-
-    <div class = "card">
-    <div class="row">
-        <img class="img" src="images/vasan.jpg">
-        <p>VASANTHAKAALA KAVITHAIGAL</p>
-        <p>Rs. 255></p>
-        <button> Add to Cart</button>
-    </div>
-    </div>
-
-    <section class="productContainer">
-        <h2 class="catagoriestitles">Products</h2>
-        <div class="card">
-            <img src="images/kargil.jpg" alt="Avatar">
-            <div class="product-detail-container">
-                <h4><b>Nivea</b></h4>
-                <p class="Offer-price">OfferPrice:Rs.100</p>
-                <p>MRP:<del>RS.120</del></p>
-                <button><a href="cart.html" class="add-cart-Button">Add to Cart</a></button>
-            </div>
-        </div>
-        </section>
-
-   <!-- <div class = "shop-item">
-        <img class = "shop-item-image" src = "images/ayurvedic.jpg"  alt = "ayurvedic">
-        <p class = "shop-item-title">Book :The Ayurvedic Reset Diet</p>
-        <p> By :  Vatsala Sperling</p>
-        <div  class = "shop-item-details">
-            <p class = "shop-item-price">₹300</p>
-        <button class = "button" type = "button">ADD TO CART</button>
-        </div>
-    </div>         -->
-
-     
-    
-   <!--  cart   -->
-  <!---<div class = "cartsection">
-    <section class = "container content-section">
-        <h2 class = "section-header">CART</h2>
-        <div class = "cart-row">
-           <span class="cart-item">ITEM</span>
-           <span class="cart-price">PRICE</span>
-           <span class="cart-quantity">QUANTITY</span>     
-       </div>
-       <div class="cart-items"> 
-      <!---  <div class="cart-row">
-            <div class="cart-item cart-column">
-                <img class="cart-item-image" src="maha.jpg" width="100" height="100">
-                <span class="cart-item-title">Mahabharata</span>
-            </div>
-            <span class="cart-price cart-column">₹800</span>
-            <div class="cart-quantity cart-column">
-                <input class="cart-quantity-input" type="number" value="1">
-                <button class="btn btn-danger" type="button">REMOVE</button>
-            </div>
-        </div>
-        
-        <div class="cart-row">
-            <div class="cart-item cart-column">
-                <img class="cart-item-image" src="morality.jpg" width="100" height="100">
-                <span class="cart-item-title">History and morality</span>
-            </div>
-            <span class="cart-price cart-column">₹500</span>
-            <div class="cart-quantity cart-column">
-                <input class="cart-quantity-input" type="number" value="2">
-                <button class="btn btn-danger" type="button">REMOVE</button>  
-            </div>     
-        </div>
-        <div class="cart-total">
-            <strong class="cart-total-title">Total</strong>
-            <span class="cart-total-price">₹</span>   
-        </div> 
-        
-
-        
-        <a href = "Shipment Address.html"button class=" btn-purchase" type="button">PURCHASE</button></a> -->
-
+</footer>
     <script src="index.js"></script>
+
 </body>
 
 </html>

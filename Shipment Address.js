@@ -1,4 +1,5 @@
 function Shipment_validation() {
+    
      event.preventDefault() ;
      
      var Firstname = document.getElementById("Firstname").value;
@@ -69,7 +70,7 @@ function Shipment_validation() {
 
      const url = "https://784ea086-d974-431c-aa48-7801aa7b2561-bluemix.cloudantnosqldb.appdomain.cloud/bookshop_user/shippingaddress";
      axios.post(url, formData, { headers: { 'Authorization': basicAuth } }).then(res => {
-         let data = res.data;
+         let data = res.data;  
          alert("Registartion Successful");
          window.location.href = "payment.html";
 
