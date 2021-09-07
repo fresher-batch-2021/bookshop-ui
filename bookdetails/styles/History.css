@@ -1,25 +1,4 @@
-/*his img{ 
-    
-    width: 150px;
-    height: 150px;
-    cursor: pointer;
-} 
 
-div div{
-    float:left;
-    border: 1px solid black;
-    width: 270px;
-    margin-right: 3px;
-}
-section{
-    border: 1px solid black;
-    width: 200px;
-    height: 1000px;
-    text-align: left;
-    float :left;
-    margin-right: 8px;
-}            */
- 
  
 
 .but2{
@@ -41,23 +20,6 @@ section{
     font-size:20px;
     
 }       
-footer{
-    height:100px;
-    background-color: lightgrey;
-    height: 200px;
-    width: 100%;
-    text-align: center; 
-    background-color:lightgrey;
-}
-.foot{
-        margin-top :20px; 
-        font-size: 40px;
-}
-.text{
-        color:white;
-        font-size: 20px;
-      }
-
 
 
 /*book details */
