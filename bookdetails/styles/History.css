@@ -108,6 +108,9 @@ p{
 th{
   padding-right: 140px;
 }
+.tab th{
+  margin-left:10px;
+}
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -135,4 +138,7 @@ td{
 
 .review p{
   margin-top: 5px;
+}
+h2{
+  text-align: center;
 }
