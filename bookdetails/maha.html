@@ -14,37 +14,108 @@
 
 <body>
     <header id="header"></header>
-   
+
     <div class="mahab">
         <img class="img1" src="images/maha.jpg" alt="maha">
         <h1>Mahabharata</h1>
         <div class="specifications">
-            
+
             <ul>
                 <li> Author name : C.RAJAGOPALACHARI </li>
                 <li> Language :English</li>
                 <li> Total pages : 512</li>
                 <li> Publication Date : 23 December 2015</li>
-                
+
             </ul>
         </div>
-            <p class="rs">MRP: ₹450</p>
+        <p class="rs">MRP : ₹699</p>
 
-            <a href="Shipment Address.html"> <button class="but2">Buy Now</button></a>
-            <a href="History.html"><button class="but3">Cancel</button></a>
-        </div>
-
+        <a href="Shipment Address.html"> <button class="but2">Buy Now</button></a>
+        <a href="History.html"><button class="but3">Cancel</button></a>
     </div>
+
+
 
     <div class="descrip">
-        <strong><p>About the Book :  </strong>
+        <strong>
+            <p>About the Book :
+        </strong>
         Centuries ago, it was proclaimed of the Mahabharata: "What is not in it, is nowhere." But even
         now, we can use the same words about it. He who knows it not, knows not the heights and depths of the soul;
-        he misses the trials  and tragedy and the beauty and grandeur of life.The Mahabharata is not a mere epic; it is a romance, telling
-        the tale of heroic men and women, and of some who were divine; it is a whole literature in itself,
-        containing a code of life, a philosophy of social and ethical relations, and speculative thought on human problems that is
-        hard to rival</p>
+        he misses the trials and tragedy and the beauty and grandeur of life.</p>
     </div>
+
+
+
+
+
+    <div class="mytabs">
+        <input type="radio" id="tabfree" name="mytabs" checked="checked">
+        <label for="tabfree">Description</label>
+
+        <div class="tab">
+            <h2>Mahabharata</h2>
+            <p> Centuries ago, it was proclaimed of the Mahabharata: "What is not in it, is nowhere." But even
+                now, we can use the same words about it. He who knows it not, knows not the heights and depths of the
+                soul;
+                he misses the trials and tragedy and the beauty and grandeur of life.The Mahabharata is not a mere epic;
+                it is a
+                romance, telling
+                the tale of heroic men and women, and of some who were divine; it is a whole literature in itself,
+                containing a code of life, a philosophy of social and ethical relations, and speculative thought on
+                human
+                problems that is hard to rival</p>
+        </div>
+
+        <input type="radio" id="tabsilver" name="mytabs">
+        <label for="tabsilver">Specifications</label>
+        <div class="tab">
+            <table>
+                <tr>
+                    <th>BOOK DETAILS</th>
+                </tr>
+                <tr>
+                    <td>Book Title</td>
+                    <td>Mahabaratha</td>
+                </tr>
+                <tr>
+                    <td>Author</td>
+                    <td>C.Rajagopalachari</td>
+                </tr>
+                <tr>
+                    <td>publisher</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>published on</td>
+                    <td>20 sept 2009</td>
+                </tr>
+               
+                <tr>
+                    <td>Edition</td>
+                    <td>ISBN-10:1501182215</td>
+                </tr>
+                <tr>
+                    <td>Format</td>
+                    <td>Paperback</td>
+                </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>History</td>
+                </tr>
+            </table>
+        </div>
+
+        <input type="radio" id="tabgold" name="mytabs">
+        <label for="tabgold">Reviews</label>
+        <div class="tab">
+            <h2 class="rev">WRITE A REVIEW</h2>
+            <p>Your Name * <input type="text" id="name"> </p>
+            <p class="review">Your Review * <input type="text" id="review"> </p>
+            <button>Submit</button>
+     </div>
+     
+
     <script src="jquery.min.js"></script>
     <script>
         $("#header").load("header.html")

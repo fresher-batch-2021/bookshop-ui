@@ -14,8 +14,8 @@
     <header id="header"></header>
     <div class="mahab">
         <img class="img1" src="images/morality.jpg" alt="morality">
+        <h1>History and Morality</h1>
         <div class="specifications">
-            <h1>History and Morality</h1>
             <ul>
                 <li> Author name : DONALD BLOXHAM</li>
                 <li> Language :English</li>
@@ -23,33 +23,97 @@
                 <li> Publisher : Oxford Universityn Press,USA</li>
 
             </ul>
-            <p class="rs">₹ 1000</p>
-
-            <a href="Shipment Address.html"> <button class="but2">Buy Now</button></a>
-            <a href="History.html"><button class="but2">cancel</button></a>
-
         </div>
-        <div class="descrip">
-            <strong>
-                <p>About the Book :
-            </strong>
-            Against majority opinion within his profession, Donald Bloxham argues that it is legitimate, often
-            unavoidable,
-            and frequently important for historians to make value judgements about the past. History and Morality draws
-            on a
-            wide range of historical examples, and its author's insights as a
-            practicing historian. Examining concepts like impartiality, neutrality, contextualisation, and the use and
-            abuse
-            of the idea of the past as a foreign country, Bloxham's book investigates how far tacit moral judgements
-            infuse
-            works of history, and how strange those histories would look if the
-            judgements were removed.</p>
-        </div>
+        <p class="rs">MRP : ₹500</p>
+
+        <a href="Shipment Address.html"> <button class="but2">Buy Now</button></a>
+        <a href="History.html"><button class="but3">cancel</button></a>
+
     </div>
-    <script src="jquery.min.js"></script>
-    <script>
-        $("#header").load("header.html")
-    </script>
+    <div class="descrip">
+        <strong>
+            <p>About the Book :
+        </strong>
+        Against majority opinion within his profession, Donald Bloxham argues that it is legitimate, often
+        unavoidable, and frequently important for historians to make value judgements about the past. </p>
+    </div>
+
+
+    <div class="mytabs">
+        <input type="radio" id="tabfree" name="mytabs" checked="checked">
+        <label for="tabfree">Description</label>
+
+        <div class="tab">
+            <h2>History and Morality</h2>
+            <p> Against majority opinion within his profession, Donald Bloxham argues that it is legitimate, often
+                unavoidable,
+                and frequently important for historians to make value judgements about the past. History and Morality
+                draws
+                on a
+                wide range of historical examples, and its author's insights as a
+                practicing historian. Examining concepts like impartiality, neutrality, contextualisation, and the use
+                and
+                abuse
+                of the idea of the past as a foreign country, Bloxham's book investigates how far tacit moral judgements
+                infuse
+                works of history, and how strange those histories would look if the
+                judgements were removed. </p>
+        </div>
+
+        <input type="radio" id="tabsilver" name="mytabs">
+        <label for="tabsilver">Specifications</label>
+        <div class="tab">
+            <table>
+                <tr>
+                    <th>BOOK DETAILS</th>
+                </tr>
+                <tr>
+                    <td>Book Title</td>
+                    <td>History and Morality</td>
+                </tr>
+                <tr>
+                    <td>Author</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>publisher</td>
+                    <td>Oxford University Press, USA</td>
+                </tr>
+                <tr>
+                    <td>published on</td>
+                    <td>16 Sep 2020</td>
+                </tr>
+
+                <tr>
+                    <td>Edition</td>
+                    <td>ISBN-10:15011823216</td>
+                </tr>
+                <tr>
+                    <td>Format</td>
+                    <td>hardcopy</td>
+                </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>History</td>
+                </tr>
+            </table>
+        </div>
+
+        <input type="radio" id="tabgold" name="mytabs">
+        <label for="tabgold">Reviews</label>
+        <div class="tab">
+            <h2 class="rev">WRITE A REVIEW</h2>
+            <p>Your Name * <input type="text" id="name"> </p>
+            <p class="review">Your Review * <input type="text" id="review"> </p>
+            <button>Submit</button>
+        </div>
+
+
+
+        <script src="jquery.min.js"></script>
+        <script>
+            $("#header").load("header.html")
+        </script>
 
 </body>
 

@@ -14,8 +14,9 @@
     <header id="header"></header>
     <div class="mahab">
         <img class="img1" src="images/sabrina.jpg" alt="sabrina">
+
+        <h1>Daughter of Chaos (Chilling Adventures of Sabrina)</h1>
         <div class="specifications">
-            <h1>Daughter of Chaos (Chilling Adventures of Sabrina)</h1>
             <ul>
                 <li> Author name : Sarah Rees Brennan </li>
                 <li> Language :English</li>
@@ -23,29 +24,93 @@
                 <li> Publication Date : 26 Dec 2019</li>
 
             </ul>
-            <p class="rs">₹ 450</p>
-
-            <a href="Shipment Address.html"> <button class="but2">Buy Now</button></a>
-            <a href="novels.html"><button class="but2">cancel</button></a>
-
-
         </div>
+        <p class="rs">MRP : ₹450</p>
 
-        <div class="descrip">
-            <strong> <p>About the Book : </strong>
-            Sabrina Spellman has just made the hardest decision of her life: She's leaving behind her beloved friends at
-            Baxter High. Now it's time to follow the path of night and find her way among the witches and warlocks at
-            the
-            Academy of Unseen Arts.
-            Sabrina has always been good at the school thing, but now she has a whole new world to navigate.
-           
-            </p>
-        </div>
+        <a href="Shipment Address.html"> <button class="but2">Buy Now</button></a>
+        <a href="novels.html"><button class="but3">cancel</button></a>
+
+
     </div>
-    <script src="jquery.min.js"></script>
-    <script>
-        $("#header").load("header.html")
-    </script>
+
+    <div class="descrip">
+        <strong>
+            <p>About the Book :
+        </strong>
+        Sabrina Spellman has just made the hardest decision of her life: She's leaving behind her beloved friends at
+        Baxter High. Now it's time to follow the path of night and find her way among the witches and warlocks at
+        the Academy of Unseen Arts.
+        Sabrina has always been good at the school thing, but now she has a whole new world to navigate.
+
+        </p>
+    </div>
+
+    <div class="mytabs">
+        <input type="radio" id="tabfree" name="mytabs" checked="checked">
+        <label for="tabfree">Description</label>
+
+        <div class="tab">
+            <h2>Sabrina</h2>
+            <p> Sabrina Spellman has just made the hardest decision of her life: She's leaving behind her beloved
+                friends at
+                Baxter High. Now it's time to follow the path of night and find her way among the witches and warlocks
+                at
+                the Academy of Unseen Arts.
+                Sabrina has always been good at the school thing, but now she has a whole new world to navigate.</p>
+        </div>
+
+        <input type="radio" id="tabsilver" name="mytabs">
+        <label for="tabsilver">Specifications</label>
+        <div class="tab">
+            <table>
+                <tr>
+                    <th>BOOK DETAILS</th>
+                </tr>
+                <tr>
+                    <td>Book Title</td>
+                    <td>Sabrina</td>
+                </tr>
+                <tr>
+                    <td>Author</td>
+                    <td> Sarah Rees Brennan</td>
+                </tr>
+                <tr>
+                    <td>publisher</td>
+                    <td>Scholastic Inc</td>
+                </tr>
+                <tr>
+                    <td>published on</td>
+                    <td>26 Dec 2019</td>
+                </tr>
+               
+                <tr>
+                    <td>Edition</td>
+                    <td>ISBN-101338326066</td>
+                </tr>
+                <tr>
+                    <td>Format</td>
+                    <td>Paperback</td>
+                </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>Novel</td>
+                </tr>
+            </table>
+        </div>
+
+        <input type="radio" id="tabgold" name="mytabs">
+        <label for="tabgold">Reviews</label>
+        <div class="tab">
+            <h2 class="rev">WRITE A REVIEW</h2>
+            <p>Your Name * <input type="text" id="name"> </p>
+            <p class="review">Your Review * <input type="text" id="review"> </p>
+             <button>Submit</button>
+        </div>
+
+        <script src="jquery.min.js"></script>
+        <script>
+            $("#header").load("header.html")
+        </script>
 
 </body>
 

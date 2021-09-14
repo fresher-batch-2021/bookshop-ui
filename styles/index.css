@@ -18,7 +18,9 @@ input[type=searchbox]{
     float:left;
     margin-bottom:15px;
     height:40px;
-    width:600px;
+    width:450px;
+    padding-left: 0.5%;
+  
 }
 .fa-search {
   /* padding-top: 5px; */
@@ -33,13 +35,14 @@ input[type=searchbox]{
   
 }
 .fa-user{
-     margin-left: 120px;
+     margin-left: 160px;
      font-size: 20px;
 }
  .fa-shopping-cart {
-    margin-left:50px;
+    margin-left:80px;
     font-size:20px;
    text-decoration: none;
+   color:rgb(85,26,154);
     
  }
 
@@ -68,20 +71,20 @@ input[type=searchbox]{
   margin-left: 10px;
 }
 
-/* Slideshow container */
+
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 100%;
   position: relative;
   margin: auto;
 
 }
 
-/* Hide the images by default */
+
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -97,13 +100,11 @@ input[type=searchbox]{
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
@@ -144,13 +145,7 @@ input[type=searchbox]{
   background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
+
 .slider{
   width:100%;
   
@@ -176,6 +171,7 @@ h3{
     height:200px;
     margin-left:40px;
     margin-right: 40px;
+    position: relative;
 }
 .tit{
     color:darkblue;
@@ -183,7 +179,7 @@ h3{
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    flex: 0 0 120px;
+    
 }
 
 
@@ -194,7 +190,7 @@ h3{
   border:none;
   cursor:pointer;
   border-radius: 10px;
-  margin-left: 38px;
+  margin-left: 30px;
   margin-top:10px;
 }
   .but:hover{
@@ -210,12 +206,24 @@ h3{
   margin-top:50px;
 }
 .section2{
-    margin-top:1000px;
+    margin-top:50px;
 }
 .section3{
     margin-top:500px;
 }
-
+.offers{
+  
+  margin-top:1000px;
+  
+}
+h1{
+  text-align: center;
+}
+s{
+  padding-left: 10px;
+  color:black;
+  font-size: 15px;
+}
 .card{
   box-shadow: 0 4px 8px 0 lightgray;
   transition : 0.8s;
@@ -235,23 +243,58 @@ h3{
 .card:hover{
   background-color:whitesmoke;
 }
+
+/* offers */
+.offer{
+  height:50px;
+ position:absolute;  
+  left:218px;
+  top:2320px;
+  
+}
+.offer1{
+  height:50px;
+  position:absolute;
+  left:555px;
+  top:2320px;
+}
+.offer2{
+  height:50px;
+  position:absolute;
+  left: 885px;
+  top:2350px;
+}
+.offer3{
+  height:50px;
+  position:absolute;
+  left: 1225px;
+  top:2320px;
+  
+}
+.off{
+   height:400px;
+   width:100%;
+   
+}
+
+/* ----------- */
+
 .fa-search{
   border: 1px solid black;
   font-size: 20px;
   background-color: white;
 }
-.Go {
-  margin-right: 200px;
-}
+
 
 .MRP{
   color:red;
   margin-top:10px;
   text-align: center;
+  font-size: 20px;
 }
 footer{
   position: absolute;
-  top: 3490px;
+  top: 4080px;
   height: 200px;
   width: 100%;
   text-align: center; 
@@ -369,4 +412,87 @@ footer{
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+.text a{
+  text-decoration: none;
+  color:black;
+
+}
+.text a:hover{
+   text-decoration: underline;
+   color:blue;
+}
+.fa-twitter{
+  color:black;
+}
+.fa-twitter:hover{
+    border-radius:30px;
+    color:darkblue;
+}
+.fa-facebook{
+  color:black;
+}
+.fa-facebook:hover{
+     color:darkblue;
+}
+.fa-youtube{
+   color:black;
+}
+.fa-youtube:hover{
+  color:darkblue;
+}
+.price{
+  width:100px;
+  height:40px;
+  
+}
+.dpdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dpdown .dpdown-content {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+ .dpown:hover .dpdown-content {
+  background-color: red;
+}
+
+.dpdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow:lightgray;
+  z-index: 1;
+  margin-left: 15px;
+}
+
+.dpdown-content label{
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dpdown-content a:hover {
+  background-color: #ddd;
+
+}
+
+.dpdown:hover .dpdown-content {
+  display: block;
+}
+.suspects{
+  margin-left:42px;
 }

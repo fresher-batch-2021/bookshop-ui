@@ -12,7 +12,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="styles/index.css" />
-  
+
 </head>
 
 <body>
@@ -25,9 +25,11 @@
 
 
             <a href=Register.html>
-                <p class="far fa-user"> My account</p>
+                <p class="fas fa-user"> My account</p>
             </a>
-            <p class="fas fa-shopping-cart">My cart</p>
+            <a href="cart.html">
+                <p class="fas fa-shopping-cart"> My cart</p>
+            </a>
         </div>
 
     </nav>
@@ -41,22 +43,22 @@
             </button>
             <div class="dropdown-content">
                 <a href="History.html">History</a>
-                <a href="Novels.html">novels</a>
+                <a href="Novels.html">Novels</a>
                 <a href="Science.html">Science</a>
             </div>
         </div>
         <a href="featuredauthors.html">Featured Authors</a>
         <a href="awardwinners.html">Award Winners</a>
-        <a href="bestsellers.html">BestSellers</a>
+        <a href="bestsellers.html">Best Sellers</a>
     </nav>
 
 
-    <!-- Slideshow container -->    
+    <!-- Slideshow container -->
     <div class="slideshow-container">
 
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
-            <img class = "slider" src="images/slider1.png" alt="slider1">
+            <img class="slider" src="images/slider1.png" alt="slider1">
             <div class="text">Caption Text</div>
         </div>
 
@@ -68,7 +70,7 @@
 
         <div class="mySlides fade">
             <div class="numbertext">3 / 3</div>
-            <img class ="slider" src="images/slider3.png" alt="slider3">
+            <img class="slider" src="images/slider3.png" alt="slider3">
             <div class="text">Caption Three</div>
         </div>
 
@@ -87,47 +89,46 @@
 
 
 
-
-
     <section class="section1">
         <h3>New Releases</h3>
         <div class="card">
             <div class="row">
-                <img class="img" src="images/suspects.jpg" alt="suspects">
+                <a href="bookdetails/suspects.html"><img class="suspects" src="images/suspects.jpg" alt="suspects"
+                        height="200"></a>
 
                 <p class="tit">SUSPECTS SOMEONE KNOWS THE TRUTH</p>
                 <p class="MRP">MRP: ₹699</p>
-                <button class="but"> Add to Cart</button>
+                <a href=cart.html><button class="but"> Add to Cart</button></a>
             </div>
         </div>
 
         <div class="card">
             <div class="row">
-                <img class="img" src="images/sky.jpg" alt="sky">
+                <a href="bookdetails/sky.html"><img class="img" src="images/sky.jpg" alt="sky"></a>
                 <p class="tit">THE ONLY PLANE IN THE SKY THE ORAL HISTORY OF 9/11</p>
                 <p class="MRP">MRP: ₹699</p>
-                <button class="but"> Add to Cart</button>
+                <a href="cart.html"><button class="but"> Add to Cart</button></a>
 
             </div>
         </div>
 
         <div class="card">
             <div class="row">
-                <img class="img" src="images/scorpian.jpg" alt="scorpian">
+                <a href="bookdetails/scorpian.html"><img class="img" src="images/scorpian.jpg" alt="scorpian"></a>
 
                 <p class="tit">SCORPION CATCH HIM IF YOU CAN</p>
                 <p class="MRP">MRP: ₹750</p>
-                <button class="but"> Add to Cart</button>
+                <a href="cart.html"><button class="but"> Add to Cart</button></a>
             </div>
         </div>
 
         <div class="card">
             <div class="row">
-                <img class="img" src="images/sulthan.jpg" alt="sulthan">
+                <a href="bookdetails/sulthan.html"><img class="img" src="images/sulthan.jpg" alt="sulthan"></a>
 
                 <p class="tit">SULTAN THE LEGEND OF HYDER ALI</p>
                 <p class="MRP">MRP: ₹800</p>
-                <button class="but"> Add to Cart</button>
+                <a href="cart.html"><button class="but"> Add to Cart</button></a>
             </div>
         </div>
 
@@ -138,7 +139,7 @@
 
                 <p class="tit">DISCORDANT NOTES VOL 1</p>
                 <p class="MRP">MRP: ₹999</p>
-                <button class="but"> Add to Cart</button>
+                <a href="cart.html"><button class="but"> Add to Cart</button></a>
             </div>
         </div>
 
@@ -148,7 +149,7 @@
 
                 <p class="tit">DISCORDANT NOTES VOL 2</p>
                 <p class="MRP">MRP: ₹999</p>
-                <button class="but"> Add to Cart</button>
+                <a href="cart.html"><button class="but"> Add to Cart</button></a>
             </div>
         </div>
 
@@ -159,7 +160,7 @@
 
                 <p class="tit">DAN PEDERSEN'S TOP GUN</p>
                 <p class="MRP">MRP: ₹499</p>
-                <button class="but"> Add to Cart</button>
+                <a href="cart.html"><button class="but"> Add to Cart</button></a>
             </div>
         </div>
 
@@ -171,51 +172,61 @@
                 <img class="img" src="images/business.jpg" alt="business">
                 <p class="tit"> FAMILY BUSINESS</p>
                 <p class="MRP">MRP: ₹800</p>
-                <button class="but"> Add to Cart</button>
+                <a href="cart.html"><button class="but"> Add to Cart</button></a>
             </div>
         </div>
+    </section>
+
+    <section class="offers">
+        <img class="off" src="images/50 off1.jpg">
+
     </section>
 
     <section class="section2">
-          <h3 class="bestsellers">BestSellers</h3>
+        <h3 class="bestsellers">Best Sellers</h3>
         <div class="card">
             <div class="row">
-                <img class="img" src="images/murty.jpg" alt="sudhamurty">
+
+                <a href="bestsellers.html"><img class="img" src="images/murty.jpg" alt="sudhamurty"></a>
+                <img src="images/50-Off.png" class="offer">
                 <p class="tit"> Grandma's Bag of Stories</p>
-                <p class="MRP">MRP: ₹800</p>
-                <button class="but"> Add to Cart</button>
+                <p class="MRP">MRP: ₹550<s>MRP: ₹800</s></p>
+                <a href="cart.html"><button class="but"> Add to Cart</button></a>
             </div>
         </div>
 
         <div class="card">
             <div class="row">
-                <img class="img" src="images/attack.jpg" alt="titan">
+                <a href="bestsellers.html"><img class="img" src="images/attack.jpg" alt="attack"></a>
+                <img src="images/50-Off.png" class="offer1">
                 <p class="tit">Attack on Titan 1</p>
-                <p class="MRP">MRP: ₹800</p>
-                <button class="but"> Add to Cart</button>
+                <p class="MRP">MRP: ₹430<s>MRP: ₹750</s></p>
+                <a href="cart.html"><button class="but"> Add to Cart</button></a>
             </div>
         </div>
 
         <div class="card">
             <div class="row">
-                <img class="img" src="images/work.jpg" alt="titan">
+                <a href="bestsellers.html"><img class="img" src="images/work.jpg" alt="work"></a>
+                <img src="images/50-Off.png" class="offer2">
                 <p class="tit">Show Your Work</p>
-                <p class="MRP">MRP: ₹800</p>
-                <button class="but"> Add to Cart</button>
+                <p class="MRP">MRP: ₹570<s>MRP: ₹820</s></p>
+                <a href="cart.html"><button class="but"> Add to Cart</button></a>
             </div>
         </div>
 
         <div class="card">
             <div class="row">
-                <img class="img" src="images/shetty.jpg" alt="titan">
+                <a href="bestsellers.html"> <img class="img" src="images/shetty.jpg" alt="shetty"></a>
+                <img src="images/50-Off.png" class="offer3">
                 <p class="tit">Think Like A Monk</p>
-                <p class="MRP">MRP: ₹800</p>
-                <button class="but"> Add to Cart</button>
+                <p class="MRP">MRP: ₹220<s>MRP: ₹430</s></p>
+                <a href="cart.html"><button class="but"> Add to Cart</button></a>
             </div>
         </div>
     </section>
 
-    <section class="section3">  
+    <section class="section3">
 
         <h3 class="tamil">Tamil Books</h3>
 
@@ -224,7 +235,7 @@
                 <img class="img" src="images/prosperity.jpg" alt="prosperity">
                 <p class="tit">PROSPERITY THINKING </p>
                 <p class="MRP">MRP: ₹399</p>
-                <button class="but"  onclick="addtoCart('images/prosperity.jpg','PROSPERITY THINKING',399)"> Add to Cart</button>
+                <a href="cart.html"><button class="but"> Add to Cart</button></a>
             </div>
         </div>
 
@@ -233,7 +244,7 @@
                 <img class="img" src="images/success.jpg" alt="success">
                 <p class="tit">THE LAWS OF SUCCESS</p>
                 <p class="MRP">MRP: ₹500</p>
-                <button class="but"  onclick="addtoCart('images/velir.jpg','VELIR VARALAARU',399)" > Add to Cart</button>
+                <a href="cart.html"><button class="but"> Add to Cart</button></a>
             </div>
         </div>
 
@@ -242,7 +253,7 @@
                 <img class="img" src="images/velir.jpg" alt="velir">
                 <p class="tit">VELIR VARALAARU</p>
                 <p class="MRP">MRP: ₹600</p>
-                <button class="but" onclick="addtoCart('images/velir.jpg','VELIR VARALAARU',399)"> Add to Cart</button>
+                <a href="cart.html"><button class="but"> Add to Cart</button></a>
             </div>
         </div>
 
@@ -251,7 +262,7 @@
                 <img class="img" src="images/archer.jpg" alt="archer">
                 <p class="tit">VILLAALAN THE ARCHER</p>
                 <p class="MRP">MRP: ₹355</p>
-                <button class="but" onclick="addtoCart('images/archer.jpg',' KAVITHAIGAL',399)"> Add to Cart</button>
+                <a href="cart.html"><button class="but"> Add to Cart</button></a>
             </div>
         </div>
 
@@ -260,7 +271,7 @@
                 <img class="img" src="images/vasan.jpg" alt="vasan">
                 <p class="tit"> KAVITHAIGAL</p>
                 <p class="MRP">MRP: ₹255</p>
-                <button class="but" onclick="addtoCart('images/KAVITHAIGAL.jpg',' KAVITHAIGAL',399)"> Add to Cart</button>
+                <a href="cart.html"><button class="but"> Add to Cart</button></a>
             </div>
         </div>
 
@@ -269,7 +280,7 @@
                 <img class="img" src="images/shabatam.jpg" alt="shabatam">
                 <p class="tit"> SHIVAKAMIYIN SHABATAM</p>
                 <p class="MRP"> MRP: ₹399</p>
-                <button class="but"  onclick="addtoCart('images/shabatam.jpg',' SHIVAKAMIYIN SHABATAM',399)"> Add to Cart</button>
+                <a href="cart.html"><button class="but"> Add to Cart</button></a>
             </div>
         </div>
 
@@ -278,7 +289,7 @@
                 <img class="img" src="images/sindhanigal.jpg" alt="sindhanigal">
                 <p class="tit"> UPANISHATA SINDHANIGAL</p>
                 <p class="MRP">MRP: ₹259</p>
-                <button class="but" onclick="addtoCart('images/sindhanigal.jpg','UPANISHATA SINDHANIGAL',259)"> Add to Cart</button>
+                <a href="cart.html"><button class="but"> Add to Cart</button></a>
             </div>
         </div>
 
@@ -287,7 +298,7 @@
                 <img class="img" src="images/way.jpg" alt="way">
                 <p class="tit"> THE INDIA WAY</p>
                 <p class="MRP">MRP: ₹315</p>
-                <button class="but" onclick="addtoCart('images/way.jpg',' THE INDIA WAY',315)"> Add to Cart</button>
+                <a href="cart.html"><button class="but"> Add to Cart</button></a>
             </div>
         </div>
     </section>
@@ -344,14 +355,20 @@
 
     <footer>
         <div class="foot">
-            <em class="fab fa-linkedin"></em>
+            <a href="https://twitter.com/"><em class="fab fa-twitter"></em></a>
             <em class="fab fa-youtube"></em>
-            <em class="fab fa-facebook"></em>
+            <a href="https://www.facebook.com/"><em class="fab fa-facebook"></em></a>
         </div>
         <div class="text">
-            <p> about </p>
-            <p>Terms of Use</p>
-            <p>contact</p>
+            <a href="about.html">
+                <p class="about"> About </p>
+            </a>
+            <a href="terms.html">
+                <p> Terms of Use</p>
+            </a>
+            <a href="contactus.html">
+                <p class="Contact"> Contact Us</p>
+            </a>
         </div>
     </footer>
 

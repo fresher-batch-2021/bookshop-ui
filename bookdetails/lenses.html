@@ -13,8 +13,9 @@
     <header id="header"></header>
     <div class="mahab">
         <img class="img1" src="images/lenses.jpg" alt="lenses">
+
+        <h1>Through Their Lenses</h1>
         <div class="specifications">
-            <h1>Through Their Lenses</h1>
 
 
             <ul>
@@ -24,30 +25,96 @@
                 <li> Publication Date :27 Jan 2021</li>
 
             </ul>
-            <p class="rs">₹ 720</p>
-
-            <a href="Shipment Address.html"> <button class="but2">Buy Now</button></a>
-            <a href="novels.html"><button class="but2">cancel</button></a>
-
-
         </div>
+        <p class="rs">MRP : ₹ 720</p>
 
-        <div class="descrip">
-            <strong>
-                <p>About the Book :
-            </strong>
+        <a href="Shipment Address.html"> <button class="but2">Buy Now</button></a>
+        <a href="novels.html"><button class="but3">cancel</button></a>
+
+
+    </div>
+
+    <div class="descrip">
+        <strong>
+            <p>About the Book :
+        </strong>
+        Through Their Lenses is a collection of twenty-nine award-winning short stories by tweens. 
+        </p>
+    </div>
+
+    <script src="jquery.min.js"></script>
+    <script>
+        $("#header").load("header.html")
+    </script>
+
+<div class="mytabs">
+    <input type="radio" id="tabfree" name="mytabs" checked="checked">
+    <label for="tabfree">Description</label>
+
+    <div class="tab">
+        <h2>Through Their Lenses</h2>
+        <p>
             Through Their Lenses is a collection of twenty-nine award-winning short stories by tweens. These stories
             encompass a wide range of genres,
             inviting readers to explore a wealth of important themes passionately crafted by these young writers: from a
             girl going on a quest to release
             a curse bestowed on her by a witch to a guy trying to escape after being stranded in a different time.
-            </p>
-        </div>
+           </p>
     </div>
-    <script src="jquery.min.js"></script>
-    <script>
-        $("#header").load("header.html")
-    </script>
+
+    <input type="radio" id="tabsilver" name="mytabs">
+    <label for="tabsilver">Specifications</label>
+    <div class="tab">
+        <table>
+            <tr>
+                <th>BOOK DETAILS</th>
+            </tr>
+            <tr>
+                <td>Book Title</td>
+                <td>Through Their Lenses</td>
+            </tr>
+            <tr>
+                <td>Author</td>
+                <td>Nico Roman Cordonier Gehring,Raphael Courouble</td>
+            </tr>
+            <tr>
+                <td>publisher</td>
+                <td>Speaking Tree Publication</td>
+            </tr>
+            <tr>
+                <td>published on</td>
+                <td>2020</td>
+            </tr>
+           
+            <tr>
+                <td>Edition</td>
+                <td>ISBN-13:97893868504243</td>
+            </tr>
+            <tr>
+                <td>Format</td>
+                <td>Hardcopy</td>
+            </tr>
+            <tr>
+                <td>Category</td>
+                <td>Novel</td>
+            </tr>
+        </table>
+    </div>
+
+    <input type="radio" id="tabgold" name="mytabs">
+    <label for="tabgold">Reviews</label>
+    <div class="tab">
+        <h2 class="rev">WRITE A REVIEW</h2>
+        <p>Your Name * <input type="text" id="name"> </p>
+        <p class="review">Your Review * <input type="text" id="review"> </p>
+         <button>Submit</button>
+    </div>
+
+
+<script src="jquery.min.js"></script>
+<script>
+    $("#header").load("header.html")
+</script>
 
 </body>
 

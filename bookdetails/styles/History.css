@@ -108,3 +108,87 @@ h1{
   margin-left:660px;
   padding-top:40px;
 }
+
+
+.mytabs {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1260px;
+  
+
+}
+.mytabs input[type="radio"] {
+  display: none;
+}
+.mytabs label {
+  padding: 6.5px;
+  height:40px;
+  color: rgb(51,143,208);
+  background-color: white;
+  cursor:pointer;
+  border:1.5px solid rgb(221,221,221);
+  font-size:20px;
+  
+}
+.mytabs label:hover{
+   color:red;
+}
+.mytabs .tab {
+height:500px;
+
+   order: 1;
+  display: none;
+  width: 100%;
+}
+p{
+  padding-top:20px;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+  display: block;
+  background-color:rgb(247,249,255);
+  border:1.5px solid rgb(221,221,221);
+  padding-left:10px;
+  padding-top:20px;
+  margin-bottom:20px;
+  font-size:20px;
+  margin-right:100px;
+  
+}
+
+.mytabs input[type="radio"]:checked + label {
+  background: #fff; 
+  color:black;
+  
+}
+th{
+  padding-right: 140px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+
+tr{
+  border:1px solid silver;
+  height:50px;
+}
+td{
+  padding-left:10px;
+}
+.tab #name{
+    margin-left: 20px;
+    height:30px;
+    width:350px;
+}
+ #review{
+  height:100px;
+  width:900px;
+  margin-left:5px;
+}
+
+.review p{
+  margin-top: 5px;
+}
