@@ -75,8 +75,8 @@
         </div>
 
 
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev" onclick="plusSlides(-1)"></a>
+        <a class="next" onclick="plusSlides(1)"></a>
     </div>
     <br>
 
@@ -86,19 +86,36 @@
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
 
-
-
+    <!-----price----------->
+    <div class="pricing">
+        <button class="drop-price">Price<em class="fas fa-angle-down"></em></button>
+        
+        <div class="check">
+            <input type="checkbox">
+            <label for="range">₹100-₹399</label>
+            <div class="check1">
+                <input type="checkbox">
+                <label for="range">₹400-₹799</label>
+            </div>
+            <div class ="check2">
+                <input type="checkbox" class="check2">
+                <label for="range">₹800-₹1000</label>
+            </div>
+        </div>
+    </div>
 
     <section class="section1">
         <h3>New Releases</h3>
         <div class="card">
+
             <div class="row">
                 <a href="bookdetails/suspects.html"><img class="suspects" src="images/suspects.jpg" alt="suspects"
                         height="200"></a>
 
                 <p class="tit">SUSPECTS SOMEONE KNOWS THE TRUTH</p>
                 <p class="MRP">MRP: ₹699</p>
-                <a href=cart.html><button class="but"> Add to Cart</button></a>
+                <button onclick="addtoCart('suspects.jpg','SUSPECTS SOMEONE KNOWS THE TRUTH',699)" class="but"> Add to
+                    Cart</button>
             </div>
         </div>
 
@@ -188,7 +205,7 @@
             <div class="row">
 
                 <a href="bestsellers.html"><img class="img" src="images/murty.jpg" alt="sudhamurty"></a>
-                <img src="images/50-Off.png" class="offer" alt = "offer">
+                <img src="images/50-Off.png" class="offer" alt="offer">
                 <p class="tit"> Grandma's Bag of Stories</p>
                 <p class="MRP">MRP: ₹550<s>MRP: ₹800</s></p>
                 <a href="cart.html"><button class="but"> Add to Cart</button></a>
@@ -198,7 +215,7 @@
         <div class="card">
             <div class="row">
                 <a href="bestsellers.html"><img class="img" src="images/attack.jpg" alt="attack"></a>
-                <img src="images/50-Off.png" class="offer1" alt = "offer">
+                <img src="images/50-Off.png" class="offer1" alt="offer">
                 <p class="tit">Attack on Titan 1</p>
                 <p class="MRP">MRP: ₹430<s>MRP: ₹750</s></p>
                 <a href="cart.html"><button class="but"> Add to Cart</button></a>
@@ -208,7 +225,7 @@
         <div class="card">
             <div class="row">
                 <a href="bestsellers.html"><img class="img" src="images/work.jpg" alt="work"></a>
-                <img src="images/50-Off.png" class="offer2" alt = "offer">
+                <img src="images/50-Off.png" class="offer2" alt="offer">
                 <p class="tit">Show Your Work</p>
                 <p class="MRP">MRP: ₹570<s>MRP: ₹820</s></p>
                 <a href="cart.html"><button class="but"> Add to Cart</button></a>
@@ -289,7 +306,8 @@
                 <img class="img" src="images/sindhanigal.jpg" alt="sindhanigal">
                 <p class="tit"> UPANISHATA SINDHANIGAL</p>
                 <p class="MRP">MRP: ₹259</p>
-                <a href="cart.html"><button class="but"> Add to Cart</button></a>
+                <button onclick="addtoCart('sindhanigal.jpg','UPANISHATA SINDHANIGAL',259)" class="but"> Add to
+                    Cart</button>
             </div>
         </div>
 
@@ -298,7 +316,7 @@
                 <img class="img" src="images/way.jpg" alt="way">
                 <p class="tit"> THE INDIA WAY</p>
                 <p class="MRP">MRP: ₹315</p>
-                <a href="cart.html"><button class="but"> Add to Cart</button></a>
+                <button onclick="addtoCart('way.jpg','THE INDIA WAY',315)" class="but"> Add to Cart</button>
             </div>
         </div>
     </section>

@@ -1,4 +1,6 @@
 function Shipment_validation() {
+
+    console.log("okay");
     
      event.preventDefault() ;
      
@@ -13,7 +15,7 @@ function Shipment_validation() {
 
      
 
-     if(Firstname==""){
+     if(Firstname == ""){
          alert("firstname is required");
          return false; 
      }
@@ -25,7 +27,7 @@ function Shipment_validation() {
          alert("invalid email");
          return false;
      }
-     else if(password.length<8){
+     else if(password.length>8){
          alert("password should be atleast 8 characters");
          return false;
      }
@@ -46,48 +48,37 @@ function Shipment_validation() {
          return false;
      }
      else{
-         alert("nextpage");
-         window.location.href="Payment.html";
-        
-     }
-     const dbusername = 'apikey-v2-23epskwaoah6sy6rvo29zejnn1k4kl1llrrq1ot36mry';
-     const dbpassword = '69c1d2737d371d9f6b7f6009287e6ccc';
-     const basicAuth = 'Basic ' + btoa(dbusername + ':' + dbpassword);
-     console.log(basicAuth);
-     let userobj = {
-         "firstname": Firstname,
-         "lastname" : Lastname,
-         "email": email,
-         "password" : password,
-         "address" : address,
-         "city" : city,
-         "pincode" : pincode,
-        "phonenumber": phonenumber
-     }
     
-     
-   
+    let url = "https://784ea086-d974-431c-aa48-7801aa7b2561-bluemix.cloudant.com/shippingaddress/";
 
-     const url = "https://784ea086-d974-431c-aa48-7801aa7b2561-bluemix.cloudantnosqldb.appdomain.cloud/bookshop_user/shippingaddress";
+     const dbusername = "apikey-v2-23epskwaoah6sy6rvo29zejnn1k4kl1llrrq1ot36mry";
+     const dbpassword = "69c1d2737d371d9f6b7f6009287e6ccc";
+     const basicAuth = 'Basic ' + btoa(dbusername + ":" + dbpassword);
+     console.log(basicAuth);
+
+     let formData = {
+         firstnames: Firstname,
+         lastnames : Lastname,
+         emails: email,
+         passwords : password,
+         addresss : address,
+         citys : city,
+         pincodes : pincode,
+        phonenumbers: phonenumber
+     };
+    
+     console.log(formData);
+
      axios.post(url, formData, { headers: { 'Authorization': basicAuth } }).then(res => {
          let data = res.data;  
          alert("Registartion Successful");
          window.location.href = "payment.html";
 
-     }).catch(err => {
-         console.error(err.response.data);
-         alert("Unable to register");
-     });
+        }).catch(err => {
+            console.error(err.response.data);
+            alert("Unable to register");
+        });
 
- }
+         }
 
-      
-
-
-
-   
-    
-
-
-
-
+}

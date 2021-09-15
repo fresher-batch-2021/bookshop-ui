@@ -8,12 +8,16 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="styles/Shipment Address.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="Shipment Address.js"></script>
 </head>
 
 <body>
     <header id = "header"></header>
-    <form onsubmit="Shipment_validation()">
+    <form>
         <h2> Shipping Address</h2>
         <div class="add">
             <input type="text" name="Firstname" id="Firstname" placeholder="Enter First name" required autofocus> <br>
@@ -36,7 +40,7 @@
             <input type="number" name="phonenumber" id="phonenumber" placeholder="phonenumber" required>
 
             <br>
-         <button  type="submit">continue</button>
+         <button  type="button" onclick="Shipment_validation()">continue</button>
 
         </div>
     </form>

@@ -1,30 +1,11 @@
 
-if (document.readyState == 'loading') {
+/*if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
     ready()
 }
 
-/*show();
-function show(){
-    let cardDetails=[{image:'suspects.jpg',bookName:'SUSPECTS SOMEONE KNOWS THE TRUTH',price:699}];
-    let content='';
-    for(let card of cardDetails){
-        content+=`
-        <div class = "card">
-        <div class="row">
-          <img class="img" src="images/${card.image}">
-        
-          <p>${card.bookName}</p>
-          <p>Rs. ${card.price}</p>
-          <button class = "but"> Add to Cart</button>
-      </div>
-      </div>
-  
-        `
-    }
-    document.querySelector().innerHTML=content;
-}         */
+
 
 function ready() {
     var removeCartItemButtons = document.getElementsByClassName('btn-danger')
@@ -140,9 +121,9 @@ function showSlides() {
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
+}           */
 
-// yeswanth
+
 function addtoCart(img,name,price){
     let cartStr=localStorage.getItem("cartElements")
     let cartItems=cartStr!=null?JSON.parse(cartStr):[];
@@ -160,6 +141,6 @@ function addtoCart(img,name,price){
     }
     localStorage.setItem("cartElements",JSON.stringify(cartItems));
     alert(cartItems[index].quantity)
-
+    window.location.href='cart.html';
 
 }

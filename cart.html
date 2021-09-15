@@ -9,6 +9,7 @@
 </head>
 <body>
      <header id = "header"></header>
+
     <section class="container content-section">
         <h2 class="section-header">CART</h2>
         <div class="cart-row">
@@ -16,18 +17,9 @@
             <span class="cart-price cart-header cart-column">PRICE</span>
             <span class="cart-quantity cart-header cart-column">QUANTITY</span>
         </div>
+
             <div class="cart-items">
-                <div class="cart-row">
-                    <div class="cart-item cart-column">
-                        <img class="cart-item-image" src="Images/suspects.jpg" width="100" height="100" alt="suspects">
-                        <span class="cart-item-title"> Suspects someone Knows the Truth  </span>
-                    </div>
-                    <span class="cart-price cart-column">₹699</span>
-                    <div class="cart-quantity cart-column">
-                        <input class="cart-quantity-input" type="number" value="1">
-                        <em class="fas fa-trash"></em>
-                    </div>
-                </div>
+                
 
             </div>
         <div class="cart-total">
@@ -41,5 +33,6 @@
     <script>
       $("#header").load("header.html");
     </script>
+    <script src="cart.js"></script>
 </body>
 </html>

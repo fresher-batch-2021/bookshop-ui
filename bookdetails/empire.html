@@ -24,10 +24,10 @@
 
             </ul>
         </div>
-        <p class="rs">MRP : ₹550</p>
+        <p class="rs">MRP : ₹300</p>
 
-        <a href="Shipment Address.html"> <button class="but2">Buy Now</button></a>
-        <a href="History.html"><button class="but3">cancel</button></a>
+        <a href="../Shipment Address.html"> <button class="but2">Buy Now</button></a>
+        <a href="../History.html"><button class="but3">cancel</button></a>
 
 
     </div>
@@ -38,16 +38,86 @@
         </strong>
         This book tells a story of radical educational change. In the early nineteenth century, an imperial civil
         society movement promoted modern elementary 'schools for all'.
-        This movement included British, American and German missionaries, and Indian intellectuals and social
-        reformers. They organised themselves in non-governmental organisations, which aimed to change Indian
-        education.
+
         </p>
     </div>
 
-    <script src="jquery.min.js"></script>
-    <script>
-        $("#header").load("../header.html")
-    </script>
+    <div class="mytabs">
+        <input type="radio" id="tabfree" name="mytabs" checked="checked">
+        <label for="tabfree">Description</label>
+
+        <div class="tab">
+            <h2>Beginnings of Colonial Education in India</h2>
+            <p>
+                This book tells a story of radical educational change. In the early nineteenth century, an imperial
+                civil society movement promoted modern elementary 'schools for all'.
+                This movement included British, American and German missionaries, and Indian intellectuals and social
+                reformers. They organised themselves in non-governmental organisations,
+                which aimed to change Indian education. Firstly, they introduced a new culture of schooling, centred on
+                memorisation, examination, and technocratic management. Secondly, they
+                laid the ground for the building of the colonial system of education, which substituted indigenous
+                education. Thirdly, they broadened the social accessibility of schooling. However,
+                for the nineteenth century reformers, education for all did not mean equal education for all: elementary
+                schooling became a means to teach different subalterns 'their place' in colonial society.
+                Finally, the educational movement also furthered the building of a secular 'national education' in
+                England.
+
+            </p>
+        </div>
+
+        <input type="radio" id="tabsilver" name="mytabs">
+        <label for="tabsilver">Specifications</label>
+        <div class="tab">
+            <table>
+                <caption></caption>
+                <tr>
+                    <th scope="col">BOOK DETAILS</th>
+                </tr>
+                <tr>
+                    <td>Book Title</td>
+                    <td>Beginnings of Colonial Education in India</td>
+                </tr>
+                <tr>
+                    <td>Author</td>
+                    <td>Jana Tschurenev </td>
+                </tr>
+                <tr>
+                    <td>publisher</td>
+                    <td>Cambridge University Press </td>
+                </tr>
+                <tr>
+                    <td>published on</td>
+                    <td>23 May 2019</td>
+                </tr>
+
+                <tr>
+                    <td>Edition</td>
+                    <td>ISBN-10:1108498337</td>
+                </tr>
+                <tr>
+                    <td>Format</td>
+                    <td>paperback</td>
+                </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>Novel</td>
+                </tr>
+            </table>
+        </div>
+
+        <input type="radio" id="tabgold" name="mytabs">
+        <label for="tabgold">Reviews</label>
+        <div class="tab">
+            <h2 class="rev">WRITE A REVIEW</h2>
+            <p>Your Name * <input type="text" id="name"> </p>
+            <p class="review">Your Review * <input type="text" id="review"> </p>
+            <button>Submit</button>
+        </div>
+
+        <script src="jquery.min.js"></script>
+        <script>
+            $("#header").load("../header.html")
+        </script>
 
 </body>
 

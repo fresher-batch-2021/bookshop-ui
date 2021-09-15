@@ -27,8 +27,8 @@
 
         <p class="rs">MRP : ₹ 550</p>
 
-        <a href="Shipment Address.html"> <button class="but2">Buy Now</button></a>
-        <a href="History.html"><button class="but3">cancel</button></a>
+        <a href="../Shipment Address.html"> <button class="but2">Buy Now</button></a>
+        <a href="../History.html"><button class="but3">cancel</button></a>
 
     </div>
 
@@ -37,23 +37,80 @@
             <p>About the Book :
         </strong>
         This journal helps you to devour some time to yourself to understand your purpose in life and to be thankful
-        to
-        God for all this blessings.
-        This lovely and wonderful book helps you to release worries & anxiety in a comfortable way and to attract
-        happy
-        things into your life.
-        Each journaling page includes section for multiple items such as Scripture, Notes & Reflection and more. It
-        is
-        recommended that you write down the Scripture passage that you are studying.
-        By writing down the verse, it will help commit the verse to memory and establish a stronger connection and
-        understanding.
+        to God for all this blessings.
+
         </p>
     </div>
 
-    <script src="jquery.min.js"></script>
-    <script>
-        $("#header").load("header.html")
-    </script>
+    <div class="mytabs">
+        <input type="radio" id="tabfree" name="mytabs" checked="checked">
+        <label for="tabfree">Description</label>
+
+        <div class="tab">
+            <h2>Bible Study Journal</h2>
+            <p>
+                This journal helps you to devour some time to yourself to understand your purpose in life and to be
+                thankfulto God for all this blessings.This lovely and wonderful book helps you to release worries & anxiety in a comfortable way and toattract
+                happythings into your life.Each journaling page includes section for multiple items such as Scripture,
+                Notes & Reflection and more. It is recommended that you write down the Scripture passage that you are studying. By writing down the verse,
+                it will help commit the verse to memory and establish a stronger connection and understanding.
+
+            </p>
+        </div>
+
+        <input type="radio" id="tabsilver" name="mytabs">
+        <label for="tabsilver">Specifications</label>
+        <div class="tab">
+            <table>
+                <caption></caption>
+                <tr>
+                    <th scope="col">BOOK DETAILS</th>
+                </tr>
+                <tr>
+                    <td>Book Title</td>
+                    <td>Bible Study Journal</td>
+                </tr>
+                <tr>
+                    <td>Author</td>
+                    <td>Andrea Jensen</td>
+                </tr>
+                <tr>
+                    <td>publisher</td>
+                    <td> Aleman Razvan</td>
+                </tr>
+                <tr>
+                    <td>published on</td>
+                    <td>06 Feb 2021 </td>
+                </tr>
+
+                <tr>
+                    <td>Edition</td>
+                    <td>ISBN-10:1716114101</td>
+                </tr>
+                <tr>
+                    <td>Format</td>
+                    <td>paperback</td>
+                </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>History</td>
+                </tr>
+            </table>
+        </div>
+
+        <input type="radio" id="tabgold" name="mytabs">
+        <label for="tabgold">Reviews</label>
+        <div class="tab">
+            <h2 class="rev">WRITE A REVIEW</h2>
+            <p>Your Name * <input type="text" id="name"> </p>
+            <p class="review">Your Review * <input type="text" id="review"> </p>
+            <button>Submit</button>
+        </div>
+
+        <script src="jquery.min.js"></script>
+        <script>
+            $("#header").load("header.html")
+        </script>
 
 </body>
 

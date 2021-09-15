@@ -41,12 +41,13 @@ h2{
 .fa-user{
      margin-left: 160px;
      font-size: 20px;
+     color:darkblue;
 }
  .fa-shopping-cart {
     margin-left:80px;
     font-size:20px;
    text-decoration: none;
-   color:rgb(85,26,154);
+   color:darkblue;
     
  }
 
@@ -253,26 +254,26 @@ s{
   height:50px;
  position:absolute;  
   left:218px;
-  top:2320px;
+  top:2440px;
   
 }
 .offer1{
   height:50px;
   position:absolute;
   left:555px;
-  top:2320px;
+  top:2440px;
 }
 .offer2{
   height:50px;
   position:absolute;
   left: 885px;
-  top:2350px;
+  top:2470px;
 }
 .offer3{
   height:50px;
   position:absolute;
   left: 1225px;
-  top:2320px;
+  top:2440px;
   
 }
 .off{
@@ -303,7 +304,7 @@ footer{
   width: 100%;
   text-align: center; 
   background-color:lightgrey;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 .foot{
   margin-top :20px; 
@@ -312,6 +313,7 @@ footer{
 .text{
   color:black;
   font-size: 20px;
+  text-decoration: none;
 }
 
 .nav1{
@@ -423,7 +425,7 @@ footer{
 
 }
 .text a:hover{
-   text-decoration: underline;
+  
    color:blue;
 }
 .fa-twitter{
@@ -445,57 +447,35 @@ footer{
 .fa-youtube:hover{
   color:darkblue;
 }
-.price{
-  width:100px;
+
+/*---- price---- */
+.pricing{
+  display: inline-block;
+}
+.drop-price{
+  width:120px;
   height:40px;
+  display:block;
+  cursor: pointer;
+}
+.pricing:hover div{
+  visibility: visible;
+}
+.drop-price:hover{
+    border: none;
+    background-color:lightblue;
+}
+ input[type="checkbox"]{
+  margin-left:10px;
+  margin-top: 10px;
+}
+input[type="checkbox"],label{
+  padding-left:10px;
   
 }
-.dpdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dpdown .dpdown-content {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
- .dpown:hover .dpdown-content {
-  background-color: red;
-}
-
-.dpdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow:lightgray;
-  z-index: 1;
-  margin-left: 15px;
-}
-
-.dpdown-content label{
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dpdown-content a:hover {
-  background-color: #ddd;
-
-}
-
-.dpdown:hover .dpdown-content {
-  display: block;
+.check{
+  visibility: hidden;
+  box-shadow: 0 4px 8px 0 lightgray;
 }
 .suspects{
   margin-left:42px;
